@@ -15,7 +15,7 @@ import uvicorn
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    host = os.environ.get("HOST", "127.0.0.1")
+    host = os.environ.get("HOST", "0.0.0.0" if "PORT" in os.environ else "127.0.0.1")
     
     print("\n" + "=" * 65)
     print("  MONSOONTRUST — AI Rainfall Forecast Reliability System")

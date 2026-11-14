@@ -2,6 +2,8 @@
 
 **MonsoonTrust** is a research-grade machine learning system designed to evaluate the statistical reliability of medium-range rainfall forecasts across **Tamil Nadu, India**. Unlike traditional meteorological platforms that solely report predicted precipitation totals, MonsoonTrust models the probabilistic likelihood that a forecast will remain within an exploratory **2.5 mm** error tolerance of ground-truth observations.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/nagulkarunam3588-wq/MonsoonTrust)
+
 ---
 
 ## 1. System Architecture & Model Verification
