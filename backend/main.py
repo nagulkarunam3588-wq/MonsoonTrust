@@ -386,3 +386,13 @@ app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
 @app.get("/")
 def serve_index():
     return FileResponse(FRONTEND_DIR / "index.html")
+
+
+@app.get("/robots.txt")
+def serve_robots():
+    return FileResponse(FRONTEND_DIR / "robots.txt")
+
+
+@app.get("/sitemap.xml")
+def serve_sitemap():
+    return FileResponse(FRONTEND_DIR / "sitemap.xml", media_type="application/xml")

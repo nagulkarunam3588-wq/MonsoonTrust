@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://monsoontrust.onrender.com/sitemap.xml
