@@ -7,8 +7,11 @@ jargon-free weather news that even a child can easily understand.
 import urllib.request
 import json
 import time
-from datetime import datetime, date, timedelta
+from datetime import datetime, date, timedelta, timezone
 from typing import Dict, Any, Optional, List
+
+# Indian Standard Time (UTC+5:30) for accurate local weather timestamps
+IST = timezone(timedelta(hours=5, minutes=30))
 
 # Weather Code Mapping (Simple, child-friendly labels & icons)
 WMO_CODES = {
@@ -87,14 +90,14 @@ def get_rain_category(mm: float) -> Dict[str, str]:
 class WeatherService:
     def __init__(self):
         self.cache: Dict[str, Dict[str, Any]] = {}
-        self.cache_ttl_seconds = 600  # 10 minutes cache
+        self.cache_ttl_seconds = 60  # 1 minute cache
 
-    def get_live_weather(self, lat: float, lon: float, district: str = "Chennai") -> Dict[str, Any]:
+    def get_live_weather(self, lat: float, lon: float, district: str = "Chennai", force_refresh: bool = False) -> Dict[str, Any]:
         """Fetch live weather and 7-day forecast from Open-Meteo with caching & fallback."""
         cache_key = f"{round(lat, 2)}_{round(lon, 2)}"
         now = time.time()
 
-        if cache_key in self.cache:
+        if not force_refresh and cache_key in self.cache:
             entry = self.cache[cache_key]
             if now - entry["timestamp"] < self.cache_ttl_seconds:
                 return entry["data"]
@@ -112,7 +115,7 @@ class WeatherService:
                 url,
                 headers={"User-Agent": "MonsoonTrust-SimpleWeather/1.0"}
             )
-            with urllib.request.urlopen(req, timeout=4.0) as response:
+            with urllib.request.urlopen(req, timeout=8.0) as response:
                 raw = json.loads(response.read().decode("utf-8"))
                 processed = self._process_open_meteo_payload(raw, district, lat, lon)
                 self.cache[cache_key] = {"timestamp": now, "data": processed}
@@ -164,7 +167,7 @@ class WeatherService:
             "icon": cur_info["icon"],
             "simple_meaning": cur_info["simple"],
             "comfort_tip": comfort_tip,
-            "time_recorded": datetime.now().strftime("%I:%M %p")
+            "time_recorded": datetime.now(IST).strftime("%I:%M %p")
         }
 
         # Daily Forecasts
@@ -254,7 +257,7 @@ class WeatherService:
             "current": current,
             "tomorrow": tomorrow_data,
             "daily_forecast": forecast_list[1:8] if len(forecast_list) > 1 else forecast_list,
-            "fetched_at": datetime.now().strftime("%I:%M %p")
+            "fetched_at": datetime.now(IST).strftime("%I:%M %p")
         }
 
     def _generate_fallback_weather(self, district: str, lat: float, lon: float) -> Dict[str, Any]:
@@ -272,7 +275,7 @@ class WeatherService:
             "icon": "⛅",
             "simple_meaning": "Pleasant clouds, nice gentle breeze",
             "comfort_tip": "Warm and pleasant — Comfortable for outdoor plans.",
-            "time_recorded": datetime.now().strftime("%I:%M %p")
+            "time_recorded": datetime.now(IST).strftime("%I:%M %p")
         }
 
         forecast_list = []
@@ -313,7 +316,7 @@ class WeatherService:
             "current": current,
             "tomorrow": tomorrow_data,
             "daily_forecast": forecast_list,
-            "fetched_at": datetime.now().strftime("%I:%M %p")
+            "fetched_at": datetime.now(IST).strftime("%I:%M %p")
         }
 
     def get_weather_news_and_alerts(self, district: str = "Chennai", tomorrow_rain_mm: float = 0.0) -> Dict[str, Any]:
@@ -321,7 +324,7 @@ class WeatherService:
         Generate clear, child-friendly weather news & simple everyday safety status.
         No complicated meteorology theories or confusing jargon.
         """
-        now = datetime.now()
+        now = datetime.now(IST)
         time_str = now.strftime("%I:%M %p")
 
         # 1. Simple Color-Coded Safety Status

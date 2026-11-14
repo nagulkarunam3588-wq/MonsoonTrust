@@ -1431,8 +1431,9 @@ async function loadLiveWeatherDashboard(district = "Chennai", forceRefresh = fal
   if (timeElem) timeElem.textContent = "Fetching live satellite & forecast model data...";
 
   try {
-    // 1. Fetch Live Weather & 7-Day Forecast
-    const wRes = await fetch(`${API_BASE}/api/live-weather?lat=${lat}&lon=${lon}&district=${encodeURIComponent(district)}`);
+    // 1. Fetch Live Weather & 7-Day Forecast with cache-busting
+    const refreshQuery = forceRefresh ? `&force_refresh=true&_t=${Date.now()}` : `&_t=${Date.now()}`;
+    const wRes = await fetch(`${API_BASE}/api/live-weather?lat=${lat}&lon=${lon}&district=${encodeURIComponent(district)}${refreshQuery}`);
     const weatherData = await wRes.json();
     state.liveWeather = weatherData;
 
@@ -1465,7 +1466,8 @@ async function loadLiveWeatherDashboard(district = "Chennai", forceRefresh = fal
     }
 
     if (timeElem) {
-      timeElem.textContent = `Updated ${weatherData.fetched_at || "Just Now"}`;
+      const clientTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      timeElem.textContent = `Updated ${clientTime} · Live Satellite Feed`;
     }
 
     // Update Tomorrow Forecast UI

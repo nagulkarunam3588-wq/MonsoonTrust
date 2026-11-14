@@ -211,10 +211,11 @@ def check_date_reliability(
 def get_live_weather(
     lat: float = Query(13.0827, ge=8.0, le=14.5),
     lon: float = Query(80.2707, ge=75.8, le=80.8),
-    district: Optional[str] = "Chennai"
+    district: Optional[str] = "Chennai",
+    force_refresh: bool = False
 ):
     """Fetch live weather conditions and 7-day forecast from Open-Meteo."""
-    return weather_service.get_live_weather(lat=lat, lon=lon, district=district or "Chennai")
+    return weather_service.get_live_weather(lat=lat, lon=lon, district=district or "Chennai", force_refresh=force_refresh)
 
 
 @app.get("/api/weather-news")
