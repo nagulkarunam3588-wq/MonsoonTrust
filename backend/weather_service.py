@@ -167,7 +167,7 @@ class WeatherService:
             "icon": cur_info["icon"],
             "simple_meaning": cur_info["simple"],
             "comfort_tip": comfort_tip,
-            "time_recorded": datetime.now(IST).strftime("%I:%M %p")
+            "time_recorded": datetime.now(IST).strftime("%I:%M:%S %p")
         }
 
         # Daily Forecasts
@@ -257,7 +257,7 @@ class WeatherService:
             "current": current,
             "tomorrow": tomorrow_data,
             "daily_forecast": forecast_list[1:8] if len(forecast_list) > 1 else forecast_list,
-            "fetched_at": datetime.now(IST).strftime("%I:%M %p")
+            "fetched_at": datetime.now(IST).strftime("%I:%M:%S %p")
         }
 
     def _generate_fallback_weather(self, district: str, lat: float, lon: float) -> Dict[str, Any]:
@@ -275,7 +275,7 @@ class WeatherService:
             "icon": "⛅",
             "simple_meaning": "Pleasant clouds, nice gentle breeze",
             "comfort_tip": "Warm and pleasant — Comfortable for outdoor plans.",
-            "time_recorded": datetime.now(IST).strftime("%I:%M %p")
+            "time_recorded": datetime.now(IST).strftime("%I:%M:%S %p")
         }
 
         forecast_list = []
@@ -316,7 +316,7 @@ class WeatherService:
             "current": current,
             "tomorrow": tomorrow_data,
             "daily_forecast": forecast_list,
-            "fetched_at": datetime.now(IST).strftime("%I:%M %p")
+            "fetched_at": datetime.now(IST).strftime("%I:%M:%S %p")
         }
 
     def get_weather_news_and_alerts(self, district: str = "Chennai", tomorrow_rain_mm: float = 0.0) -> Dict[str, Any]:
@@ -325,7 +325,7 @@ class WeatherService:
         No complicated meteorology theories or confusing jargon.
         """
         now = datetime.now(IST)
-        time_str = now.strftime("%I:%M %p")
+        time_str = now.strftime("%I:%M:%S %p")
 
         # 1. Simple Color-Coded Safety Status
         if tomorrow_rain_mm >= 64.5:

@@ -1409,6 +1409,15 @@ function setupLiveWeatherControls() {
       }
     });
   }
+
+  // Live real-time ticking station clock (updates every second)
+  setInterval(() => {
+    const cardClock = document.getElementById("live-card-clock");
+    if (cardClock) {
+      const now = new Date();
+      cardClock.textContent = `🕒 ${now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}`;
+    }
+  }, 1000);
 }
 
 async function loadLiveWeatherDashboard(district = "Chennai", forceRefresh = false) {
@@ -1465,9 +1474,14 @@ async function loadLiveWeatherDashboard(district = "Chennai", forceRefresh = fal
       }
     }
 
+    const now = new Date();
+    const clientTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
     if (timeElem) {
-      const clientTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       timeElem.textContent = `Updated ${clientTime} · Live Satellite Feed`;
+    }
+    const cardClock = document.getElementById("live-card-clock");
+    if (cardClock) {
+      cardClock.textContent = `🕒 ${clientTime}`;
     }
 
     // Update Tomorrow Forecast UI
