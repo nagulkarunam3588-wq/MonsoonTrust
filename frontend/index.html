@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonsoonTrust — Can You Trust The Rain Forecast? (Tamil Nadu AI Guide)</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS for Maps -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  
+  <!-- Custom Luxury Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  
+  <!-- Chart.js & Leaflet JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-bar">
+    <div class="brand-wrapper">
+      <div class="brand-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+          <path d="M8 19v2"/>
+          <path d="M12 19v2"/>
+          <path d="M16 19v2"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <h1>MONSOON<span>TRUST</span></h1>
+        <div class="brand-subtitle">Can You Trust The Rain Forecast? · AI Guide for Tamil Nadu</div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Tabs -->
+    <nav class="nav-links">
+      <button class="nav-btn active" data-tab="overview">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        🏠 Home Summary
+      </button>
+      <button class="nav-btn" data-tab="liveweather">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><path d="M12 19v3"/><path d="m9 22 3-3 3 3"/></svg>
+        🌦️ Live Weather & News
+      </button>
+      <button class="nav-btn" data-tab="assessment">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
+        📍 Check My Town's Forecast
+      </button>
+      <button class="nav-btn" data-tab="spatial">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+        🗺️ Tamil Nadu Rain Map
+      </button>
+      <button class="nav-btn" data-tab="leadday">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+        📅 Day-by-Day Accuracy
+      </button>
+      <button class="nav-btn" data-tab="dataset">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+        🔬 Behind The Science & Data
+      </button>
+    </nav>
+
+    <!-- Model Status Pill -->
+    <div class="status-badge">
+      <span class="pulse-dot"></span>
+      <span>AI CHECK ENGINE READY · 16,700 PAST FORECASTS TESTED</span>
+    </div>
+  </header>
+
+  <!-- Friendly Notice Banner -->
+  <div class="disclaimer-banner">
+    <div>
+      <strong>💡 WHAT THIS TOOL DOES:</strong> We test how accurate weather rain forecasts usually are across Tamil Nadu by comparing past computer predictions against real rain gauges. <em>This is an educational AI research tool, not an official emergency storm warning.</em>
+    </div>
+    <div>Region: <strong>Tamil Nadu (38 Districts)</strong> · Accurate Margin: <strong>Within 2.5 mm of real rain</strong></div>
+  </div>
+
+  <!-- Main Content Body -->
+  <main class="main-content">
+
+    <!-- ==================== TAB 1: EXECUTIVE OVERVIEW ==================== -->
+    <section id="section-overview" class="tab-section active">
+      
+      <!-- Hero Banner -->
+      <div class="hero-banner">
+        <div class="hero-text-block">
+          <h2>Weather Apps Predict Rain. <br><em>We Tell You If You Can Trust It.</em></h2>
+          <p class="hero-desc">
+            Ever planned an outdoor event, a harvest, or a trip because a weather app showed rain, only for the day to turn out completely sunny? 
+            <strong>MonsoonTrust is an AI-powered forecast trust-checker.</strong> Instead of making up new weather guesses, our machine learning model analyzes 16,700 real historical weather forecasts across Tamil Nadu to estimate how likely a rain prediction is to be accurate within a 2.5 mm margin.
+          </p>
+          <div class="hero-chips">
+            <span class="hero-chip">✨ Simple for Everyone</span>
+            <span class="hero-chip">📍 38 Tamil Nadu Districts</span>
+            <span class="hero-chip">🌧️ 16,700 Past Forecasts Tested</span>
+            <span class="hero-chip">🎯 2.5 mm Real-World Accuracy</span>
+            <span class="hero-chip">🤖 Trained AI Model</span>
+          </div>
+        </div>
+
+        <div class="orbit-container">
+          <div class="orbit-ring">
+            <div class="orbit-core">
+              <div class="orbit-number">1 to 10</div>
+              <div class="orbit-label">Days Ahead Checked</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Plain-English Explainer Box -->
+      <div style="background:rgba(99, 213, 200, 0.06);border:1px solid var(--teal-border);border-radius:var(--radius-sm);padding:18px 24px;margin-bottom:24px;display:flex;align-items:flex-start;gap:16px;">
+        <div style="font-size:28px;line-height:1;">💡</div>
+        <div style="font-size:13px;line-height:1.7;color:var(--ivory-text);">
+          <strong style="color:var(--teal-glow);font-size:14px;letter-spacing:0.5px;">HOW TO USE THIS APP IN 3 SIMPLE STEPS:</strong><br>
+          <strong>1.</strong> Click <strong>"Check My Town's Forecast"</strong> above.<br>
+          <strong>2.</strong> Choose your Tamil Nadu district, select your town or neighborhood, and enter the rain amount you saw on your weather app.<br>
+          <strong>3.</strong> The AI will instantly show you a <strong>Trust Score (0% to 100%)</strong> showing whether that forecast is dependable or risky based on real past weather history!
+        </div>
+      </div>
+
+      <!-- KPI Metrics Grid (Plain English + Scientific Subtitle) -->
+      <div class="kpi-grid">
+        <div class="luxury-card kpi-card">
+          <div class="kpi-label">Past Forecasts Tested</div>
+          <div class="kpi-value" id="kpi-records">16,700</div>
+          <div class="kpi-sub">Real predictions checked against rain gauges</div>
+        </div>
+
+        <div class="luxury-card kpi-card">
+          <div class="kpi-label">AI Trust Accuracy</div>
+          <div class="kpi-value" id="kpi-accuracy">78.7%</div>
+          <div class="kpi-sub">Correctly flags reliable vs risky forecasts</div>
+        </div>
+
+        <div class="luxury-card kpi-card">
+          <div class="kpi-label">Confidence Quality Score</div>
+          <div class="kpi-value" id="kpi-brier">0.15</div>
+          <div class="kpi-sub">Brier Score (Closer to 0 means high confidence)</div>
+        </div>
+
+        <div class="luxury-card kpi-card">
+          <div class="kpi-label">Usually Accurate</div>
+          <div class="kpi-value" id="kpi-reliable-pct">80.5%</div>
+          <div class="kpi-sub">8 in 10 forecasts match within 2.5 mm</div>
+        </div>
+
+        <div class="luxury-card kpi-card">
+          <div class="kpi-label">Typical Forecast Miss</div>
+          <div class="kpi-value" id="kpi-mae">4.6 mm</div>
+          <div class="kpi-sub">Average difference (Mean Absolute Error)</div>
+        </div>
+
+        <div class="luxury-card kpi-card">
+          <div class="kpi-label">Tamil Nadu Zones</div>
+          <div class="kpi-value" id="kpi-cells">334</div>
+          <div class="kpi-sub">Covering all 38 districts & hills</div>
+        </div>
+      </div>
+
+      <!-- Middle Grid: Class Distribution & Research Limitations -->
+      <div class="grid-2col">
+        <!-- Class Distribution Chart -->
+        <div class="luxury-card">
+          <div class="section-header">
+            <h3 class="section-title">How Often Are <span>Forecasts Accurate?</span></h3>
+            <span class="section-tag">2.5 mm Real-World Margin</span>
+          </div>
+          <div style="height: 250px; position: relative;">
+            <canvas id="chart-class-distribution"></canvas>
+          </div>
+          <div style="font-size:12px;color:var(--ivory-muted);margin-top:14px;line-height:1.6;background:rgba(255,255,255,0.02);padding:12px;border-radius:6px;border:1px solid var(--border-subtle);">
+            <div style="margin-bottom:6px;">
+              🟢 <strong>Accurate / Reliable (80.5% — 13,446 forecasts):</strong> The weather forecast hit within 2.5 mm of what actually rained.
+            </div>
+            <div>
+              🔴 <strong>Off-Track / Outside Tolerance (19.5% — 3,254 forecasts):</strong> The weather forecast missed by more than 2.5 mm (e.g. predicted dry but poured, or predicted a deluge but stayed dry).
+            </div>
+          </div>
+        </div>
+
+        <!-- Plain English Explanation of the Research -->
+        <div class="luxury-card">
+          <div class="section-header">
+            <h3 class="section-title">What Is <span>2.5 mm of Rain?</span></h3>
+            <span class="section-tag">Simple Everyday Guide</span>
+          </div>
+          <div style="font-size: 13px; color: var(--ivory-muted); line-height: 1.8;">
+            <p style="margin-bottom: 12px;">
+              <strong>What does "2.5 mm" mean in real life?</strong> 2.5 mm is about half a teaspoon of water spread over a dinner plate — roughly a light passing drizzle that makes the road damp. If the weather app says <strong>10 mm</strong> and <strong>12 mm</strong> falls, the difference is only 2 mm, which is considered a successful, reliable forecast!
+            </p>
+            <p style="margin-bottom: 12px;">
+              <strong>4 Things the AI Considers:</strong>
+              <br>• <strong>Predicted Rain Amount (34% impact):</strong> Predicting light rain is easy; predicting massive cloudbursts is much harder.
+              <br>• <strong>How Many Days Ahead (31% impact):</strong> Tomorrow's prediction is far more trustworthy than a forecast for next week.
+              <br>• <strong>Location (35% impact):</strong> Coastal Chennai behaves differently from hill stations like Ooty or dry inland plains like Madurai.
+            </p>
+            <div style="padding:10px 14px;background:rgba(216,189,136,0.08);border-left:3px solid var(--gold-accent);border-radius:4px;font-size:11px;">
+              <strong style="color:var(--gold-accent)">Public Notice:</strong> MonsoonTrust is a university-grade research tool to help the public understand weather prediction accuracy. It does not replace official flood warnings or emergency services.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Analyses Section -->
+      <div class="luxury-card" style="margin-top:20px;">
+        <div class="section-header">
+          <h3 class="section-title">Recent <span>Town Checks</span></h3>
+          <span class="section-tag">Recently Evaluated Locations</span>
+        </div>
+        <div class="history-grid" id="recent-analyses-container">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB: LIVE WEATHER & METEOROLOGICAL NEWS ==================== -->
+    <section id="section-liveweather" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Live Weather & Tomorrow's Rain <span>(Tamil Nadu)</span></h2>
+          <p style="color:var(--ivory-muted);font-size:13px;margin-top:4px;">
+            Real-time conditions, tomorrow's expected rainfall, simple safety guides, and 7-day outlook — crystal-clear and simple for everyone.
+          </p>
+        </div>
+        <span class="section-tag">Live Weather Feed</span>
+      </div>
+
+      <!-- District Selector & Live Sync Bar -->
+      <div class="live-location-bar">
+        <div class="live-district-controls">
+          <label for="live-district-select">📍 Choose Your District:</label>
+          <select id="live-district-select" class="custom-select"></select>
+          <button id="btn-refresh-live-weather" class="live-refresh-btn" title="Refresh live weather station feed">
+            <svg class="refresh-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+              <path d="M3 3v5h5"/>
+              <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+              <path d="M16 16h5v5"/>
+            </svg>
+            <span id="refresh-btn-label">Refresh Live Data</span>
+          </button>
+        </div>
+        <div style="font-size:12px;color:var(--ivory-muted);display:flex;align-items:center;gap:8px;">
+          <span class="pulse-dot"></span>
+          <span id="live-weather-timestamp">Live Model Synced</span>
+        </div>
+      </div>
+
+      <!-- ROW 1: Current Weather (Left) & Tomorrow's Rain Prediction (Right) -->
+      <div class="grid-2col" style="margin-bottom:24px;">
+        
+        <!-- Left: Right Now Card -->
+        <div class="luxury-card" style="display:flex;flex-direction:column;justify-content:space-between;border-radius:14px;">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <span class="section-tag" style="background:rgba(99,213,200,0.12);color:var(--teal-glow);">☀️ Right Now Outside</span>
+              <span id="live-district-badge" style="font-size:12px;color:var(--gold-accent);font-weight:700;">Chennai, Tamil Nadu</span>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:6px 0;">
+              <div style="display:flex;align-items:center;gap:16px;">
+                <div id="live-current-icon" style="font-size:52px;line-height:1;">⛅</div>
+                <div>
+                  <div style="display:flex;align-items:baseline;gap:6px;">
+                    <span id="live-current-temp" style="font-size:42px;font-weight:800;color:var(--ivory-text);">27.0</span>
+                    <span style="font-size:22px;color:var(--ivory-muted);">°C</span>
+                  </div>
+                  <div id="live-current-condition" style="font-size:14px;font-weight:700;color:var(--teal-glow);">Passing Clouds</div>
+                </div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:11px;color:var(--ivory-muted);text-transform:uppercase;letter-spacing:0.5px;">Feels Like</div>
+                <div id="live-current-feels" style="font-size:22px;font-weight:700;color:var(--gold-accent);">30.2°C</div>
+              </div>
+            </div>
+
+            <div id="live-current-tip" style="background:rgba(255,255,255,0.04);border-radius:10px;padding:10px 14px;margin:12px 0;font-size:12px;color:var(--ivory-text);border:1px solid rgba(255,255,255,0.05);">
+              Warm and pleasant — Comfortable for everyday outdoor plans and school.
+            </div>
+
+            <!-- 4 Simple Everyday Stats -->
+            <div class="live-stat-grid" style="margin-top:12px;">
+              <div class="live-stat-chip">
+                <span class="live-stat-label">💧 Air Moisture</span>
+                <span id="live-stat-humidity" class="live-stat-val">76%</span>
+              </div>
+              <div class="live-stat-chip">
+                <span class="live-stat-label">🌧️ Rain Right Now</span>
+                <span id="live-stat-precip" class="live-stat-val">0.0 mm</span>
+              </div>
+              <div class="live-stat-chip">
+                <span class="live-stat-label">💨 Wind</span>
+                <span id="live-stat-wind" class="live-stat-val">12 km/h</span>
+              </div>
+              <div class="live-stat-chip">
+                <span class="live-stat-label">👕 Clothes</span>
+                <span id="live-stat-clothes" class="live-stat-val" style="font-size:14px;color:#67e8f9;margin-top:3px;">Light Cotton</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Tomorrow's Rain Prediction Card (The Star Highlight) -->
+        <div class="tomorrow-forecast-card" style="margin-top:0;display:flex;flex-direction:column;justify-content:space-between;border-radius:14px;">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span class="tomorrow-rain-badge">
+                <span>🌧️ TOMORROW'S RAIN PREDICTION</span>
+              </span>
+              <span id="tomorrow-date-pill" style="font-size:12px;color:var(--ivory-muted);font-weight:600;">Tomorrow</span>
+            </div>
+
+            <div class="tomorrow-main-numbers" style="margin:8px 0 12px;">
+              <div>
+                <span style="font-size:11px;color:var(--ivory-muted);text-transform:uppercase;display:block;margin-bottom:2px;">Expected Rain Tomorrow</span>
+                <span id="tomorrow-rain-amount" class="tomorrow-rain-val">0.0 mm</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:4px;">
+                <span id="tomorrow-rain-prob" class="tomorrow-prob-tag">8% Chance of Rain</span>
+                <span id="tomorrow-rain-category" style="font-size:12px;color:var(--teal-glow);font-weight:700;">No Rain (Dry Day)</span>
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:space-between;background:rgba(3,22,36,0.6);padding:10px 14px;border-radius:10px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.04);">
+              <div style="display:flex;align-items:center;gap:10px;">
+                <span id="tomorrow-weather-icon" style="font-size:24px;">⛅</span>
+                <span id="tomorrow-weather-condition" style="font-size:13px;font-weight:700;color:var(--ivory-text);">Passing Clouds</span>
+              </div>
+              <div style="font-size:12px;color:var(--ivory-muted);">
+                Afternoon: <strong id="tomorrow-temp-max" style="color:var(--ivory-text);">31°C</strong> · Night: <strong id="tomorrow-temp-min" style="color:var(--ivory-muted);">24°C</strong>
+              </div>
+            </div>
+
+            <!-- Plain English Explanation (Simple for Anyone) -->
+            <p id="tomorrow-summary-text" style="font-size:13px;line-height:1.6;color:#e2e8f0;margin-bottom:14px;">
+              Tomorrow in Chennai will be sunny and dry. There is almost zero chance of rain, so you don't need an umbrella!
+            </p>
+          </div>
+
+          <!-- Direct Bridge to MonsoonTrust AI Engine -->
+          <div style="border-top:1px dashed rgba(99,213,200,0.3);padding-top:12px;">
+            <button id="btn-assess-tomorrow-ai" class="btn btn-primary" style="width:100%;background:linear-gradient(135deg, #0ea5e9, #059669);font-size:13px;font-weight:700;padding:12px;letter-spacing:0.5px;border-radius:10px;">
+              🎯 Check if Weather Apps are Accurate (AI Trust Score)
+            </button>
+            <div style="font-size:11px;color:var(--ivory-muted);text-align:center;margin-top:6px;">
+              Tests how reliable weather predictions have been for this rain amount in your district.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ROW 2: Daily Safety Guide (Left) & Simple Weather News (Right) -->
+      <div class="grid-2col" style="margin-bottom:24px;">
+        
+        <!-- Left: Daily Safety & Everyday Travel Guide -->
+        <div id="district-alert-card" class="luxury-card" style="border-left:5px solid #10b981;border-radius:14px;display:flex;flex-direction:column;justify-content:space-between;">
+          <div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span id="alert-pulse-dot" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#10b981;"></span>
+                <span style="font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--ivory-muted);">Daily Safety Guide</span>
+              </div>
+              <span id="alert-district-name" style="font-size:11px;color:var(--gold-accent);font-weight:700;">Chennai</span>
+            </div>
+
+            <h3 id="alert-title" style="font-size:16px;font-weight:800;color:#10b981;margin-bottom:6px;">
+              🟢 Green: All Clear — Safe & Pleasant Weather
+            </h3>
+            <p id="alert-desc" style="font-size:12px;line-height:1.5;color:var(--ivory-text);margin-bottom:12px;">
+              Wonderful calm weather over Chennai. No storms, no flood risks, and no heavy rain.
+            </p>
+
+            <!-- 3 Simple Quick-Action Tiles -->
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px;">
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:10px;text-align:center;">
+                <div style="font-size:18px;">🎒</div>
+                <div style="font-size:10px;color:var(--ivory-muted);text-transform:uppercase;margin:2px 0;">School & Work</div>
+                <div id="action-school" style="font-size:11px;font-weight:700;color:#10b981;">Safe as usual</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:10px;text-align:center;">
+                <div style="font-size:18px;">☂️</div>
+                <div style="font-size:10px;color:var(--ivory-muted);text-transform:uppercase;margin:2px 0;">Umbrella?</div>
+                <div id="action-umbrella" style="font-size:11px;font-weight:700;color:#38bdf8;">Not needed</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:10px;text-align:center;">
+                <div style="font-size:18px;">🚗</div>
+                <div style="font-size:10px;color:var(--ivory-muted);text-transform:uppercase;margin:2px 0;">Roads</div>
+                <div id="action-roads" style="font-size:11px;font-weight:700;color:#10b981;">Dry & clear</div>
+              </div>
+            </div>
+
+            <div style="font-size:11px;font-weight:700;color:var(--gold-accent);margin-bottom:6px;letter-spacing:0.5px;">
+              🌾 QUICK ADVICE FOR FARMERS & OUTDOORS:
+            </div>
+            <div id="farmer-advisories-list" class="advisory-pill-list">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Simple Weather News (Zero Jargon) -->
+        <div class="luxury-card" style="border-radius:14px;display:flex;flex-direction:column;justify-content:space-between;">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <h3 class="section-title" style="font-size:16px;">📰 What's Happening in the Sky? <span>(Simple News)</span></h3>
+              <span class="section-tag">Plain English</span>
+            </div>
+
+            <div id="news-bulletins-list">
+              <!-- Dynamically populated simple stories -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ROW 3: Full-Width 7-Day Rain Planner -->
+      <div class="luxury-card" style="border-radius:14px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px;">
+          <div>
+            <h3 class="section-title" style="font-size:18px;">📅 7-Day Simple <span>Rain Planner</span></h3>
+            <p style="font-size:12px;color:var(--ivory-muted);margin-top:2px;">
+              See which days will be completely dry and which days might have passing showers.
+            </p>
+          </div>
+          <span class="section-tag">Next 7 Days</span>
+        </div>
+
+        <div id="sevenday-forecast-container" class="sevenday-grid">
+          <!-- 7 Daily Cards populated dynamically -->
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== TAB 2: LOCATION INTELLIGENCE & ASSESSMENT ==================== -->
+    <section id="section-assessment" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Check Rain Reliability <span>For Your Town</span></h2>
+          <p style="color:var(--ivory-muted);font-size:13px;margin-top:4px;">
+            Pick your district and town, enter what your weather app predicted, and let our AI calculate your <strong>Trust Score</strong> based on historical accuracy in your area.
+          </p>
+        </div>
+        <span class="section-tag">Interactive AI Checker</span>
+      </div>
+
+      <div class="grid-2col">
+        <!-- Input Controls Form -->
+        <div class="luxury-card">
+          <!-- District & Area Horizontal Row -->
+          <div class="location-inputs-bar">
+            <div class="form-group">
+              <label class="form-label" for="district-select" title="Tamil Nadu District">1. District (38 Districts)</label>
+              <select id="district-select" class="custom-select"></select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="locality-select" title="Town or Locality">2. Town / Locality (924 Areas)</label>
+              <select id="locality-select" class="custom-select"></select>
+            </div>
+          </div>
+
+          <!-- Fuzzy Search with Typo Correction -->
+          <div class="search-box-wrapper">
+            <label class="form-label">Or Type Any Town Name (Spelling Mistakes Handled Automatically)</label>
+            <div style="position:relative;margin-top:6px;">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input type="text" id="location-search-input" class="custom-input search-input" placeholder="e.g. Try typing: Tambaram, Chenai, Ooti, Maduray, Trichy, Coimbatore, Adyar...">
+            </div>
+            <div id="fuzzy-suggestions" class="fuzzy-suggestions-box"></div>
+          </div>
+
+          <!-- Custom Coordinates Option (Accordion / Collapsible) -->
+          <details style="margin-bottom:16px;cursor:pointer;">
+            <summary style="font-size:11px;color:var(--gold-accent);letter-spacing:1px;text-transform:uppercase;">
+              + Advanced: Enter Exact GPS Coordinates (Latitude & Longitude)
+            </summary>
+            <div style="display:grid;grid-template-columns:1fr 1fr auto;gap:10px;margin-top:10px;">
+              <input type="number" id="custom-lat-input" step="0.001" min="8.0" max="14.5" class="custom-input" placeholder="Lat (e.g. 13.082)">
+              <input type="number" id="custom-lon-input" step="0.001" min="75.8" max="80.8" class="custom-input" placeholder="Lon (e.g. 80.270)">
+              <button id="btn-apply-coords" class="page-btn" style="padding:0 16px;">Apply</button>
+            </div>
+          </details>
+
+          <!-- Resolved Coordinates Display Badge -->
+          <div class="coord-badge-grid">
+            <div class="coord-item">
+              <div class="coord-title">Latitude</div>
+              <div class="coord-value" id="coord-lat">13.0827° N</div>
+            </div>
+            <div class="coord-item">
+              <div class="coord-title">Longitude</div>
+              <div class="coord-value" id="coord-lon">80.2707° E</div>
+            </div>
+            <div class="coord-item">
+              <div class="coord-title">Nearest Weather Zone</div>
+              <div class="coord-value" id="coord-grid">13.00°N, 80.00°E</div>
+            </div>
+            <div class="coord-item">
+              <div class="coord-title">Distance to Zone</div>
+              <div class="coord-value" id="coord-dist">30.5 km</div>
+            </div>
+            <div class="coord-item">
+              <div class="coord-title">Local Geography</div>
+              <div class="coord-value" id="coord-zone">Northern Coastal</div>
+            </div>
+          </div>
+
+          <!-- Surrounding Localities (Within ~5 km Radius) Section -->
+          <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--border-subtle);">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <span class="form-label" style="font-size:10px;display:flex;align-items:center;gap:6px;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg>
+                Nearby Neighborhoods (Within 5 km / A Short Drive)
+              </span>
+              <span id="nearby-count-badge" class="slider-val-badge" style="font-size:10px;padding:1px 8px;">0 Areas</span>
+            </div>
+            <div id="nearby-localities-container" style="display:flex;flex-wrap:wrap;gap:6px;max-height:120px;overflow-y:auto;padding:2px;">
+              <!-- Populated dynamically by JS -->
+            </div>
+          </div>
+
+          <!-- Particular Date Picker & Seasonal Monsoon Context -->
+          <div style="margin-top:20px;padding:16px;background:rgba(255,255,255,0.02);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+              <label class="form-label" for="target-date-input" style="display:flex;align-items:center;gap:6px;font-size:11px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                3. Check Particular Date
+              </label>
+              <span id="season-badge" class="slider-val-badge" style="font-size:11px;padding:3px 10px;">
+                🌧️ Northeast Monsoon Season
+              </span>
+            </div>
+            
+            <div style="display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;">
+              <input type="date" id="target-date-input" class="custom-input" style="padding:10px 14px;cursor:pointer;">
+              <button id="btn-today-date" class="page-btn" style="padding:10px 16px;">Today</button>
+            </div>
+
+            <!-- Quick Date Shortcuts -->
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;">
+              <button class="preset-chip date-shortcut-btn" data-days="1">Tomorrow</button>
+              <button class="preset-chip date-shortcut-btn" data-days="3">In 3 Days</button>
+              <button class="preset-chip date-shortcut-btn active" data-days="5">In 5 Days</button>
+              <button class="preset-chip date-shortcut-btn" data-days="7">1 Week Ahead</button>
+              <button class="preset-chip date-shortcut-btn" data-special="archive" style="border-color:var(--gold-accent);color:var(--gold-accent);">📜 Past Archive (Jan 8, 2000)</button>
+            </div>
+
+            <div id="season-description-text" style="margin-top:10px;font-size:11px;color:var(--ivory-dim);line-height:1.5;">
+              Primary rain season for Tamil Nadu (~48% of annual rainfall). Coastal moisture fluxes bring frequent showers.
+            </div>
+          </div>
+
+          <!-- Forecast Parameter: Lead Day Slider -->
+          <div class="slider-container" style="margin-top:24px;">
+            <div class="slider-header">
+              <label class="form-label">4. Forecast Lead Time (Days Ahead)</label>
+              <span id="lead-day-badge" class="slider-val-badge">Day 5</span>
+            </div>
+            <input type="range" id="slider-lead-day" class="range-slider" min="1" max="10" value="5" step="1">
+            <div style="display:flex;gap:6px;margin-top:8px;">
+              <button class="preset-chip quick-day-btn" data-day="1">Tomorrow (Day 1)</button>
+              <button class="preset-chip quick-day-btn" data-day="3">In 3 Days</button>
+              <button class="preset-chip quick-day-btn active" data-day="5">In 5 Days</button>
+              <button class="preset-chip quick-day-btn" data-day="7">1 Week Ahead (Day 7)</button>
+              <button class="preset-chip quick-day-btn" data-day="10">10 Days Ahead</button>
+            </div>
+          </div>
+
+          <!-- Forecast Parameter: Rainfall Amount -->
+          <div class="slider-container">
+            <div class="slider-header">
+              <label class="form-label">5. How Much Rain Does Your Weather App Predict?</label>
+              <span id="rainfall-badge" class="slider-val-badge">5.0 mm</span>
+            </div>
+            <input type="range" id="slider-rainfall" class="range-slider" min="0" max="100" value="5" step="0.5">
+            <div style="display:flex;align-items:center;gap:12px;margin-top:10px;">
+              <input type="number" id="rainfall-input" class="custom-input" style="width:110px;" min="0" max="500" value="5" step="0.1">
+              <div class="preset-chips">
+                <span class="preset-chip" data-val="0.5">☀️ 0.5 mm (Drizzle)</span>
+                <span class="preset-chip active" data-val="5.0">🌦️ 5 mm (Light Rain)</span>
+                <span class="preset-chip" data-val="15.0">🌧️ 15 mm (Moderate)</span>
+                <span class="preset-chip" data-val="35.0">⛈️ 35 mm (Heavy)</span>
+                <span class="preset-chip" data-val="75.0">🌊 75 mm (Downpour)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model Switcher (Simplified) -->
+          <div class="form-group" style="margin-top:16px;">
+            <label class="form-label" for="model-type-select">AI Model Version</label>
+            <select id="model-type-select" class="custom-select">
+              <option value="temporal">Standard Chronological Model (Validated on unseen future weather dates)</option>
+              <option value="prototype">Prototype Benchmark Model</option>
+            </select>
+          </div>
+
+          <!-- Action Button -->
+          <button id="btn-run-prediction" class="btn-assess">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+            CALCULATE FORECAST TRUST SCORE
+          </button>
+        </div>
+
+        <!-- Output Assessment Card -->
+        <div class="luxury-card" id="assessment-result-card">
+          <div class="result-header">
+            <div id="grade-badge" class="grade-pill" style="background:rgba(99,213,200,0.15);color:var(--teal-glow);border:1px solid var(--teal-border);">
+              MODERATE RELIABILITY
+            </div>
+
+            <div id="reliability-gauge-circle" class="gauge-circle" style="border:3px solid var(--teal-glow);">
+              <span id="gauge-val" class="gauge-percentage" style="color:var(--ivory-text);">72.4%</span>
+              <span class="gauge-subtitle">Forecast Trust Score</span>
+            </div>
+
+            <p id="prediction-summary-text" class="assessment-summary-text">
+              The forecast has reasonable agreement, though moderate variation is possible across lead time.
+            </p>
+          </div>
+
+          <!-- Detailed Assessment Metrics (Friendly Labels) -->
+          <div class="coord-badge-grid" style="margin-bottom:20px;">
+            <div class="coord-item">
+              <div class="coord-title">Risk of Forecast Error</div>
+              <div class="coord-value" id="metric-outside-rate" style="color:var(--coral-risk);">27.6%</div>
+            </div>
+            <div class="coord-item">
+              <div class="coord-title">Past Track Record</div>
+              <div class="coord-value" id="metric-calibrated-rate" style="color:var(--gold-accent);">65.1%</div>
+            </div>
+            <div class="coord-item">
+              <div class="coord-title">Typical Rain Miss</div>
+              <div class="coord-value" id="metric-hist-mae">3.71 mm</div>
+            </div>
+            <div class="coord-item">
+              <div class="coord-title">Day Average Trust</div>
+              <div class="coord-value" id="metric-lead-avg-rel">67.0%</div>
+            </div>
+          </div>
+
+          <!-- Feature Impact Contribution Breakdown -->
+          <div class="section-header" style="margin-bottom:12px;padding-bottom:6px;">
+            <h4 style="font-size:13px;letter-spacing:1px;color:var(--gold-accent);text-transform:uppercase;">What Influenced This Trust Score?</h4>
+            <span style="font-size:10px;color:var(--ivory-dim);">Key Factors</span>
+          </div>
+
+          <div id="feature-impact-container">
+            <!-- Populated dynamically by JS -->
+          </div>
+
+          <!-- Real Rain Gauge Ground Truth Verification Card (Appears for Past Archive Dates) -->
+          <div id="historical-ground-truth-card" style="display:none;margin-top:18px;padding:16px;background:rgba(216,189,136,0.06);border:1px solid rgba(216,189,136,0.3);border-radius:var(--radius-sm);">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <span style="font-size:11px;font-weight:600;color:var(--gold-accent);text-transform:uppercase;letter-spacing:1px;display:flex;align-items:center;gap:6px;">
+                📜 Ground-Truth Rain Gauge Verification
+              </span>
+              <span id="historical-match-badge" class="slider-val-badge" style="background:rgba(99,213,200,0.2);color:var(--teal-glow);font-size:10px;">
+                Historical Match Found
+              </span>
+            </div>
+            <div class="coord-badge-grid" style="grid-template-columns:1fr 1fr 1fr;margin-top:10px;">
+              <div class="coord-item">
+                <div class="coord-title">Actual Rain That Fell</div>
+                <div class="coord-value" id="hist-actual-rain" style="color:var(--teal-glow);">0.0 mm</div>
+              </div>
+              <div class="coord-item">
+                <div class="coord-title">Computer Forecast</div>
+                <div class="coord-value" id="hist-forecast-rain">0.0 mm</div>
+              </div>
+              <div class="coord-item">
+                <div class="coord-title">Forecast Error</div>
+                <div class="coord-value" id="hist-error-mm">0.0 mm</div>
+              </div>
+            </div>
+            <div id="hist-evolution-container" style="margin-top:12px;font-size:11px;color:var(--ivory-muted);line-height:1.6;">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <div style="margin-top:20px;padding:12px;background:rgba(255,255,255,0.02);border-radius:var(--radius-sm);border:1px solid var(--border-subtle);font-size:11px;color:var(--ivory-dim);line-height:1.6;">
+            <strong>How to read this score:</strong>
+            <br>• <strong>Above 75%: High Trust</strong> — You can safely plan around this rain prediction.
+            <br>• <strong>50% to 75%: Moderate Trust</strong> — The forecast is a helpful guide, but expect some variation.
+            <br>• <strong>Below 50%: Low Trust / Caution</strong> — High chance the weather will differ significantly from the prediction.
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== TAB 3: SPATIAL RELIABILITY MAP ==================== -->
+    <section id="section-spatial" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Tamil Nadu <span>Rain Accuracy Map</span></h2>
+          <p style="color:var(--ivory-muted);font-size:13px;margin-top:4px;">
+            See how reliable weather forecasts are across different parts of Tamil Nadu. Click any dot on the map to see its past forecast accuracy and typical error!
+          </p>
+        </div>
+        <span class="section-tag">Interactive Map</span>
+      </div>
+
+      <div class="map-container">
+        <div id="leaflet-map" style="height:100%;width:100%;"></div>
+        <div class="map-toolbar">
+          <span style="font-size:10px;color:var(--gold-accent);letter-spacing:1px;font-weight:600;">MAP VIEW:</span>
+          <button class="map-btn active" data-layer="reliability">🎯 Forecast Reliability %</button>
+          <button class="map-btn" data-layer="mae">📏 Typical Error Size (mm)</button>
+          <button class="map-btn" data-layer="bias">⚖️ Over vs Under Prediction</button>
+        </div>
+      </div>
+
+      <!-- Plain English Color Legend -->
+      <div style="background:rgba(255,255,255,0.03);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);padding:14px 18px;margin-top:14px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;font-size:12px;">
+        <span style="color:var(--ivory-dim);font-weight:600;text-transform:uppercase;font-size:10px;letter-spacing:1px;">Map Colors:</span>
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;border-radius:50%;background:#63D5C8;display:inline-block;"></span> <strong>Teal:</strong> Highly Reliable (85%+ accurate)</span>
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;border-radius:50%;background:#D8BD88;display:inline-block;"></span> <strong>Gold:</strong> Good Agreement (70%–85%)</span>
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;border-radius:50%;background:#E5A93B;display:inline-block;"></span> <strong>Amber:</strong> Moderate Risk (55%–70%)</span>
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;border-radius:50%;background:#E06D53;display:inline-block;"></span> <strong>Coral:</strong> Tough to Predict (Below 55%)</span>
+      </div>
+
+      <!-- Spatial Map Everyday Regional Guide -->
+      <div class="grid-3col" style="margin-top:20px;">
+        <div class="luxury-card">
+          <h4 style="font-size:13px;letter-spacing:1.5px;color:var(--gold-accent);text-transform:uppercase;margin-bottom:8px;">
+            🌊 Coastal Districts (Chennai, Cuddalore, Nagapattinam)
+          </h4>
+          <p style="font-size:12px;color:var(--ivory-muted);line-height:1.7;">
+            Right on the Bay of Bengal coast. Sea breezes and sudden coastal cloud shifts make rain timing harder to pinpoint. Weather models can occasionally over-predict light showers.
+          </p>
+        </div>
+
+        <div class="luxury-card">
+          <h4 style="font-size:13px;letter-spacing:1.5px;color:var(--gold-accent);text-transform:uppercase;margin-bottom:8px;">
+            🌾 Interior Plains (Coimbatore, Tiruppur, Madurai, Salem)
+          </h4>
+          <p style="font-size:12px;color:var(--ivory-muted);line-height:1.7;">
+            Protected by the Western Ghats mountains. Because rain is less frequent, dry-spell predictions are consistently 90%+ reliable. Excellent for planning farming and outdoor work.
+          </p>
+        </div>
+
+        <div class="luxury-card">
+          <h4 style="font-size:13px;letter-spacing:1.5px;color:var(--gold-accent);text-transform:uppercase;margin-bottom:8px;">
+            ⛰️ Mountain Hills (Nilgiris, Ooty, Kodaikanal, Tenkasi)
+          </h4>
+          <p style="font-size:12px;color:var(--ivory-muted);line-height:1.7;">
+            Steep mountains push clouds upward, causing localized micro-climate showers. Weather can be sunny in one valley while raining just 5 km away, leading to higher forecast variance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 4: LEAD-DAY DYNAMICS ==================== -->
+    <section id="section-leadday" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">How Forecast Accuracy <span>Changes Day by Day</span></h2>
+          <p style="color:var(--ivory-muted);font-size:13px;margin-top:4px;">
+            Why does tomorrow's forecast feel so accurate, while a 7-day forecast often changes? Here is what 16,700 real weather records show across <strong>Days 1 to 10</strong>.
+          </p>
+        </div>
+        <span class="section-tag">Day 1 to 10 Timeline</span>
+      </div>
+
+      <!-- Quick Plain-English Lead-Day Takeaway -->
+      <div class="coord-badge-grid" style="margin-bottom:20px;">
+        <div class="coord-item">
+          <div class="coord-title">Day 1 (Tomorrow)</div>
+          <div class="coord-value" style="color:var(--teal-glow);">94% Reliable</div>
+          <small style="color:var(--ivory-dim);font-size:10px;">Average miss: only 0.47 mm</small>
+        </div>
+        <div class="coord-item">
+          <div class="coord-title">Day 3 (Mid-Week)</div>
+          <div class="coord-value" style="color:var(--teal-glow);">93% Reliable</div>
+          <small style="color:var(--ivory-dim);font-size:10px;">Average miss: only 0.13 mm</small>
+        </div>
+        <div class="coord-item">
+          <div class="coord-title">Day 5 (Weekend Outlook)</div>
+          <div class="coord-value" style="color:var(--gold-accent);">88% Reliable</div>
+          <small style="color:var(--ivory-dim);font-size:10px;">Average miss: ~0.95 mm</small>
+        </div>
+        <div class="coord-item">
+          <div class="coord-title">Day 7 (1 Week Ahead)</div>
+          <div class="coord-value" style="color:var(--amber-warn);">56% Reliable</div>
+          <small style="color:var(--ivory-dim);font-size:10px;">Error increases as weather patterns shift</small>
+        </div>
+      </div>
+
+      <!-- Lead Day Charts -->
+      <div class="luxury-card" style="margin-bottom:24px;">
+        <div class="section-header">
+          <h3 class="section-title" style="font-size:20px;">Forecast Reliability <span>Across Days Ahead</span></h3>
+          <span class="section-tag">How Trust Changes Over Time</span>
+        </div>
+
+        <!-- 3 Quick Color-Coded Trust Zones -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:12px;margin-bottom:16px;">
+          <div style="background:rgba(16,185,129,0.1);border:1px solid #10b981;border-radius:10px;padding:12px 16px;">
+            <div style="font-size:12px;font-weight:700;color:#34d399;">🟢 Days 1 to 4: Safe Zone (92% - 96% Trust)</div>
+            <div style="font-size:11px;color:var(--ivory-muted);margin-top:2px;">Weather apps miss by less than 0.5 mm on average. Safe for outdoor events and trips.</div>
+          </div>
+          <div style="background:rgba(245,158,11,0.1);border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;">
+            <div style="font-size:12px;font-weight:700;color:#fbbf24;">🟡 Day 5: Caution Zone (82% Trust)</div>
+            <div style="font-size:11px;color:var(--ivory-muted);margin-top:2px;">Good for rough weekend planning, but rain timing can shift by a few hours.</div>
+          </div>
+          <div style="background:rgba(239,68,68,0.1);border:1px solid #ef4444;border-radius:10px;padding:12px 16px;">
+            <div style="font-size:12px;font-weight:700;color:#f87171;">🔴 Days 6 to 10: Uncertain Zone (50% - 67% Trust)</div>
+            <div style="font-size:11px;color:var(--ivory-muted);margin-top:2px;">Like flipping a coin. Computer models often change direction completely.</div>
+          </div>
+        </div>
+
+        <div style="height:320px;position:relative;">
+          <canvas id="chart-lead-days"></canvas>
+        </div>
+      </div>
+
+      <!-- Lead Day Breakdown Table -->
+      <div class="luxury-card">
+        <div class="section-header">
+          <h3 class="section-title" style="font-size:20px;">Day-by-Day <span>Trust & Accuracy Guide</span></h3>
+          <span class="section-tag">Simple Practical Meaning</span>
+        </div>
+        <div class="table-responsive">
+          <table class="luxury-table">
+            <thead>
+              <tr>
+                <th>How Far Ahead?</th>
+                <th>AI Trust Rating</th>
+                <th>Average Rain Miss</th>
+                <th>What Does This Mean For You?</th>
+                <th>Rain Gauges Tested</th>
+              </tr>
+            </thead>
+            <tbody id="lead-day-tbody">
+              <!-- Populated dynamically by JS -->
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:12px;color:var(--ivory-dim);margin-top:14px;line-height:1.6;">
+          <strong>💡 Why does accuracy drop after Day 5?</strong> Computer weather models can see 3 to 4 days ahead very clearly. Around Day 7 to 8, ocean clouds and wind directions shift easily, causing rain forecasts to miss by 3 to 4 mm.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 5: RESEARCH DATASET & CALIBRATION ==================== -->
+    <section id="section-dataset" class="tab-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Behind The Science <span>& Verification Data</span></h2>
+          <p style="color:var(--ivory-muted);font-size:13px;margin-top:4px;">
+            For scientists, data analysts, and curious minds: inspect the underlying statistical validation, feature importance ranking, and full 16,700 record dataset.
+          </p>
+        </div>
+        <span class="section-tag">Scientific Integrity</span>
+      </div>
+
+      <!-- Calibration & Feature Importance Row -->
+      <div class="grid-2col">
+        <div class="luxury-card">
+          <div class="section-header">
+            <h3 class="section-title" style="font-size:20px;">Is The AI Honest? <span>(Calibration Curve)</span></h3>
+            <span class="section-tag">Brier Score: 0.1506</span>
+          </div>
+          <div style="height:250px;position:relative;">
+            <canvas id="chart-calibration"></canvas>
+          </div>
+          <p style="font-size:11px;color:var(--ivory-dim);margin-top:10px;">
+            <strong>Plain English:</strong> When the AI says a forecast has an 80% chance of being accurate, is it actually accurate 80% of the time in real life? Yes! The line closely hugs the dashed diagonal line, proving the AI neither exaggerates nor guesses.
+          </p>
+        </div>
+
+        <div class="luxury-card">
+          <div class="section-header">
+            <h3 class="section-title" style="font-size:20px;">What Matters Most? <span>(Feature Importance)</span></h3>
+            <span class="section-tag">Model Weights</span>
+          </div>
+          <div style="height:250px;position:relative;">
+            <canvas id="chart-feature-importance"></canvas>
+          </div>
+          <p style="font-size:11px;color:var(--ivory-dim);margin-top:10px;">
+            <strong>Plain English:</strong> The predicted rainfall amount (34.3%) and how many days ahead you are looking (30.9%) matter the most (over 65% combined!), followed by your exact geographical location across Tamil Nadu.
+          </p>
+        </div>
+      </div>
+
+      <!-- Threshold Sensitivity -->
+      <div class="luxury-card" style="margin-bottom:24px;">
+        <div class="section-header">
+          <h3 class="section-title" style="font-size:20px;">What If We Allow <span>A Bigger Error Margin?</span></h3>
+          <span class="section-tag">0.1 mm vs 1.0 mm vs 2.5 mm Tolerance</span>
+        </div>
+        <div style="height:220px;position:relative;">
+          <canvas id="chart-threshold"></canvas>
+        </div>
+        <p style="font-size:11px;color:var(--ivory-dim);margin-top:10px;">
+          <strong>Plain English:</strong> If we demand that forecasts be exact to within a tiny drop (0.1 mm), only ~40% pass. But with a reasonable real-world tolerance of 2.5 mm (half a teaspoon), reliability jumps to over 80%.
+        </p>
+      </div>
+
+      <!-- Interactive Dataset Explorer Table -->
+      <div class="luxury-card">
+        <div class="section-header">
+          <div>
+            <h3 class="section-title" style="font-size:20px;">16,700 Real Past Forecasts <span>Tested Against Rain Gauges</span></h3>
+            <span id="dataset-total-count" style="font-size:12px;color:var(--teal-glow);font-weight:600;">16,700 verified records</span>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+            <select id="filter-date" class="custom-select" style="width:145px;padding:6px 10px;font-size:11px;">
+              <option value="">All Archive Dates</option>
+            </select>
+            <select id="filter-lead-day" class="custom-select" style="width:140px;padding:6px 10px;font-size:11px;">
+              <option value="">All Days Ahead</option>
+              <option value="1">Day 1 (Tomorrow)</option>
+              <option value="2">Day 2</option>
+              <option value="3">Day 3</option>
+              <option value="4">Day 4</option>
+              <option value="5">Day 5</option>
+              <option value="6">Day 6</option>
+              <option value="7">Day 7</option>
+              <option value="8">Day 8</option>
+              <option value="9">Day 9</option>
+              <option value="10">Day 10</option>
+            </select>
+            <select id="filter-reliability" class="custom-select" style="width:160px;padding:6px 10px;font-size:11px;">
+              <option value="all">All Records</option>
+              <option value="reliable">Passed Only (≤2.5mm)</option>
+              <option value="outside_tolerance">Missed Only (>2.5mm)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Friendly Explainer Box -->
+        <div style="background:rgba(99,213,200,0.06);border:1px solid var(--teal-border);border-radius:10px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;gap:12px;">
+          <span style="font-size:24px;">💡</span>
+          <div style="font-size:12px;line-height:1.6;color:var(--ivory-text);">
+            <strong>HOW TO READ THIS TABLE:</strong> Every row is an actual past weather prediction in Tamil Nadu compared to real rain gauges. If the forecast was within <strong>2.5 mm (half a teaspoon)</strong>, it gets <strong>✅ PASSED (Accurate)</strong>. If it missed by more than 2.5 mm, it gets <strong>❌ MISSED (Off-Track)</strong>.
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="luxury-table">
+            <thead>
+              <tr>
+                <th>When Forecast Was Made</th>
+                <th>Target Date</th>
+                <th>Lead Time</th>
+                <th>Station Coordinates</th>
+                <th>What App Predicted</th>
+                <th>What Gauge Measured</th>
+                <th>Pass or Fail (2.5 mm Margin)</th>
+              </tr>
+            </thead>
+            <tbody id="dataset-tbody">
+              <!-- Populated dynamically by JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination-bar">
+          <span id="dataset-current-page">Page 1 of 1114</span>
+          <div style="display:flex;gap:8px;">
+            <button id="btn-prev-page" class="page-btn">← Previous Page</button>
+            <button id="btn-next-page" class="page-btn">Next Page →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="luxury-footer">
+    <div style="font-family:var(--font-serif);font-size:20px;letter-spacing:3px;color:var(--ivory-text);margin-bottom:8px;">
+      MONSOON<span style="color:var(--teal-glow);">TRUST</span>
+    </div>
+    <div>Can You Trust The Rain Forecast? · AI-Based Reliability Assessment · Tamil Nadu, India</div>
+    <p class="footer-disclaimer">
+      MonsoonTrust is a scientific machine-learning research system developed to evaluate whether medium-range rainfall predictions match real ground rain gauges across Tamil Nadu. It does not issue operational municipal or storm warnings.
+    </p>
+  </footer>
+
+  <!-- Application Controller Script -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

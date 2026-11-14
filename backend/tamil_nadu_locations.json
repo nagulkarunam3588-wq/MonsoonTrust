@@ -1,0 +1,4850 @@
+{
+  "Ariyalur": {
+    "headquarters": "Ariyalur",
+    "region_type": "Central Inland / Agricultural & Cement Corridor",
+    "localities": [
+      {
+        "name": "Ariyalur Town",
+        "lat": 11.139,
+        "lon": 79.075
+      },
+      {
+        "name": "Jayankondam",
+        "lat": 11.218,
+        "lon": 79.306
+      },
+      {
+        "name": "Sendurai",
+        "lat": 11.258,
+        "lon": 79.167
+      },
+      {
+        "name": "Udayarpalayam",
+        "lat": 11.189,
+        "lon": 79.289
+      },
+      {
+        "name": "Andimadam",
+        "lat": 11.339,
+        "lon": 79.378
+      },
+      {
+        "name": "Varadarajanpettai",
+        "lat": 11.315,
+        "lon": 79.362
+      },
+      {
+        "name": "Meensurutti",
+        "lat": 11.248,
+        "lon": 79.432
+      },
+      {
+        "name": "Gangaikonda Cholapuram",
+        "lat": 11.206,
+        "lon": 79.451
+      },
+      {
+        "name": "T. Palur",
+        "lat": 11.082,
+        "lon": 79.324
+      },
+      {
+        "name": "Thirumanur",
+        "lat": 10.963,
+        "lon": 79.112
+      },
+      {
+        "name": "Elakurichi",
+        "lat": 10.978,
+        "lon": 79.043
+      },
+      {
+        "name": "Kallankurichi",
+        "lat": 11.152,
+        "lon": 79.124
+      },
+      {
+        "name": "Reddipalayam",
+        "lat": 11.178,
+        "lon": 79.048
+      },
+      {
+        "name": "Vikramangalam",
+        "lat": 11.042,
+        "lon": 79.215
+      },
+      {
+        "name": "Ponparappi",
+        "lat": 11.312,
+        "lon": 79.248
+      },
+      {
+        "name": "Maruvathur",
+        "lat": 11.289,
+        "lon": 79.123
+      },
+      {
+        "name": "Ottakoil",
+        "lat": 11.121,
+        "lon": 79.135
+      },
+      {
+        "name": "Thamaraikulam",
+        "lat": 11.145,
+        "lon": 79.092
+      }
+    ]
+  },
+  "Chengalpattu": {
+    "headquarters": "Chengalpattu",
+    "region_type": "Northern Coastal & Chennai Metropolis Fringe",
+    "localities": [
+      {
+        "name": "Chengalpattu Central",
+        "lat": 12.693,
+        "lon": 79.975
+      },
+      {
+        "name": "Paranur (Mahindra World City)",
+        "lat": 12.724,
+        "lon": 80.005
+      },
+      {
+        "name": "Singaperumal Koil",
+        "lat": 12.765,
+        "lon": 80.002
+      },
+      {
+        "name": "Maraimalai Nagar",
+        "lat": 12.795,
+        "lon": 80.024
+      },
+      {
+        "name": "Kattankulathur (SRM)",
+        "lat": 12.823,
+        "lon": 80.045
+      },
+      {
+        "name": "Potheri",
+        "lat": 12.836,
+        "lon": 80.052
+      },
+      {
+        "name": "Guduvanchery",
+        "lat": 12.865,
+        "lon": 80.063
+      },
+      {
+        "name": "Urapakkam",
+        "lat": 12.885,
+        "lon": 80.076
+      },
+      {
+        "name": "Vandalur Zoo",
+        "lat": 12.898,
+        "lon": 80.088
+      },
+      {
+        "name": "Tambaram South",
+        "lat": 12.924,
+        "lon": 80.127
+      },
+      {
+        "name": "Pallavaram South",
+        "lat": 12.967,
+        "lon": 80.149
+      },
+      {
+        "name": "Chromepet East",
+        "lat": 12.952,
+        "lon": 80.141
+      },
+      {
+        "name": "Thiruneermalai",
+        "lat": 12.958,
+        "lon": 80.113
+      },
+      {
+        "name": "Pammal",
+        "lat": 12.973,
+        "lon": 80.134
+      },
+      {
+        "name": "Anakaputhur",
+        "lat": 12.981,
+        "lon": 80.118
+      },
+      {
+        "name": "Pozhichalur",
+        "lat": 12.989,
+        "lon": 80.145
+      },
+      {
+        "name": "Medavakkam South",
+        "lat": 12.918,
+        "lon": 80.192
+      },
+      {
+        "name": "Sithalapakkam",
+        "lat": 12.895,
+        "lon": 80.185
+      },
+      {
+        "name": "Perumbakkam",
+        "lat": 12.899,
+        "lon": 80.199
+      },
+      {
+        "name": "Semmancheri OMR",
+        "lat": 12.863,
+        "lon": 80.225
+      },
+      {
+        "name": "Navalur",
+        "lat": 12.845,
+        "lon": 80.228
+      },
+      {
+        "name": "Siruseri SIPCOT",
+        "lat": 12.827,
+        "lon": 80.222
+      },
+      {
+        "name": "Kelambakkam",
+        "lat": 12.784,
+        "lon": 80.222
+      },
+      {
+        "name": "Thiruporur",
+        "lat": 12.725,
+        "lon": 80.189
+      },
+      {
+        "name": "Kovalam Beach",
+        "lat": 12.791,
+        "lon": 80.251
+      },
+      {
+        "name": "Muttukadu Backwaters",
+        "lat": 12.821,
+        "lon": 80.245
+      },
+      {
+        "name": "Mahabalipuram",
+        "lat": 12.626,
+        "lon": 80.192
+      },
+      {
+        "name": "Pudupattinam",
+        "lat": 12.564,
+        "lon": 80.165
+      },
+      {
+        "name": "Kalpakkam",
+        "lat": 12.528,
+        "lon": 80.174
+      },
+      {
+        "name": "Sadras Fort",
+        "lat": 12.518,
+        "lon": 80.162
+      },
+      {
+        "name": "Anupuram",
+        "lat": 12.585,
+        "lon": 80.125
+      },
+      {
+        "name": "Thirukazhukundram",
+        "lat": 12.61,
+        "lon": 80.057
+      },
+      {
+        "name": "Maduranthakam",
+        "lat": 12.51,
+        "lon": 79.884
+      },
+      {
+        "name": "Karunguzhi",
+        "lat": 12.535,
+        "lon": 79.902
+      },
+      {
+        "name": "Acharapakkam",
+        "lat": 12.415,
+        "lon": 79.818
+      },
+      {
+        "name": "Melmaruvathur",
+        "lat": 12.438,
+        "lon": 79.832
+      },
+      {
+        "name": "Cheyyur Coastal",
+        "lat": 12.352,
+        "lon": 80.002
+      },
+      {
+        "name": "Chunampet",
+        "lat": 12.274,
+        "lon": 79.924
+      }
+    ]
+  },
+  "Chennai": {
+    "headquarters": "Chennai",
+    "region_type": "Northern Coastal Metropolis",
+    "localities": [
+      {
+        "name": "Chennai Central",
+        "lat": 13.0827,
+        "lon": 80.2707
+      },
+      {
+        "name": "George Town / Parrys",
+        "lat": 13.0905,
+        "lon": 80.2885
+      },
+      {
+        "name": "Sowcarpet",
+        "lat": 13.0952,
+        "lon": 80.2795
+      },
+      {
+        "name": "Royapuram",
+        "lat": 13.1075,
+        "lon": 80.2942
+      },
+      {
+        "name": "Washermanpet",
+        "lat": 13.1115,
+        "lon": 80.2825
+      },
+      {
+        "name": "Tondiarpet",
+        "lat": 13.1252,
+        "lon": 80.2884
+      },
+      {
+        "name": "Korukkupet",
+        "lat": 13.1185,
+        "lon": 80.2685
+      },
+      {
+        "name": "Vyasarpadi",
+        "lat": 13.1042,
+        "lon": 80.2525
+      },
+      {
+        "name": "Perambur",
+        "lat": 13.1095,
+        "lon": 80.2385
+      },
+      {
+        "name": "Kolathur",
+        "lat": 13.1215,
+        "lon": 80.2185
+      },
+      {
+        "name": "Villivakkam",
+        "lat": 13.1055,
+        "lon": 80.2085
+      },
+      {
+        "name": "Anna Nagar East",
+        "lat": 13.0855,
+        "lon": 80.2255
+      },
+      {
+        "name": "Anna Nagar West",
+        "lat": 13.0872,
+        "lon": 80.2055
+      },
+      {
+        "name": "Shenoy Nagar",
+        "lat": 13.0785,
+        "lon": 80.2275
+      },
+      {
+        "name": "Kilpauk",
+        "lat": 13.0815,
+        "lon": 80.2455
+      },
+      {
+        "name": "Chetpet",
+        "lat": 13.0715,
+        "lon": 80.2415
+      },
+      {
+        "name": "Egmore",
+        "lat": 13.0782,
+        "lon": 80.2605
+      },
+      {
+        "name": "Triplicane",
+        "lat": 13.0585,
+        "lon": 80.2755
+      },
+      {
+        "name": "Royapettah",
+        "lat": 13.0535,
+        "lon": 80.2615
+      },
+      {
+        "name": "Mylapore",
+        "lat": 13.0368,
+        "lon": 80.2676
+      },
+      {
+        "name": "Marina Beach",
+        "lat": 13.0515,
+        "lon": 80.2825
+      },
+      {
+        "name": "Santhome",
+        "lat": 13.0335,
+        "lon": 80.2785
+      },
+      {
+        "name": "Alwarpet",
+        "lat": 13.0345,
+        "lon": 80.2485
+      },
+      {
+        "name": "T. Nagar",
+        "lat": 13.0418,
+        "lon": 80.2341
+      },
+      {
+        "name": "West Mambalam",
+        "lat": 13.0385,
+        "lon": 80.2225
+      },
+      {
+        "name": "Kodambakkam",
+        "lat": 13.0525,
+        "lon": 80.2265
+      },
+      {
+        "name": "Vadapalani",
+        "lat": 13.0505,
+        "lon": 80.2125
+      },
+      {
+        "name": "Ashok Nagar",
+        "lat": 13.0355,
+        "lon": 80.2115
+      },
+      {
+        "name": "KK Nagar",
+        "lat": 13.0325,
+        "lon": 80.1985
+      },
+      {
+        "name": "Saidapet",
+        "lat": 13.0215,
+        "lon": 80.2225
+      },
+      {
+        "name": "Guindy Industrial Estate",
+        "lat": 13.0067,
+        "lon": 80.2015
+      },
+      {
+        "name": "Ekkatuthangal",
+        "lat": 13.0205,
+        "lon": 80.2055
+      },
+      {
+        "name": "Alandur",
+        "lat": 13.0045,
+        "lon": 80.2005
+      },
+      {
+        "name": "Adyar",
+        "lat": 13.0065,
+        "lon": 80.2565
+      },
+      {
+        "name": "Besant Nagar",
+        "lat": 12.9985,
+        "lon": 80.2685
+      },
+      {
+        "name": "Thiruvanmiyur",
+        "lat": 12.9835,
+        "lon": 80.2595
+      },
+      {
+        "name": "Kotturpuram",
+        "lat": 13.0185,
+        "lon": 80.2435
+      },
+      {
+        "name": "Velachery",
+        "lat": 12.9815,
+        "lon": 80.2185
+      },
+      {
+        "name": "Madipakkam",
+        "lat": 12.9645,
+        "lon": 80.1985
+      },
+      {
+        "name": "Nanganallur",
+        "lat": 12.9815,
+        "lon": 80.1895
+      },
+      {
+        "name": "Meenambakkam",
+        "lat": 12.9855,
+        "lon": 80.1695
+      },
+      {
+        "name": "Perungudi",
+        "lat": 12.9625,
+        "lon": 80.2415
+      },
+      {
+        "name": "Thoraipakkam",
+        "lat": 12.9415,
+        "lon": 80.2345
+      },
+      {
+        "name": "Sholinganallur",
+        "lat": 12.9015,
+        "lon": 80.2275
+      },
+      {
+        "name": "Karapakkam",
+        "lat": 12.9155,
+        "lon": 80.2295
+      },
+      {
+        "name": "Mogappair",
+        "lat": 13.0845,
+        "lon": 80.1785
+      },
+      {
+        "name": "Ambattur",
+        "lat": 13.0985,
+        "lon": 80.1625
+      },
+      {
+        "name": "Koyambedu",
+        "lat": 13.0695,
+        "lon": 80.1955
+      },
+      {
+        "name": "Arumbakkam",
+        "lat": 13.0645,
+        "lon": 80.2085
+      }
+    ]
+  },
+  "Coimbatore": {
+    "headquarters": "Coimbatore",
+    "region_type": "Western Plateau / Rain Shadow Industrial Hub",
+    "localities": [
+      {
+        "name": "Gandhipuram Central",
+        "lat": 11.0185,
+        "lon": 76.9675
+      },
+      {
+        "name": "RS Puram",
+        "lat": 11.0085,
+        "lon": 76.9465
+      },
+      {
+        "name": "Town Hall",
+        "lat": 10.9985,
+        "lon": 76.9615
+      },
+      {
+        "name": "Ukkadam Lake",
+        "lat": 10.9885,
+        "lon": 76.9585
+      },
+      {
+        "name": "Ramanathapuram",
+        "lat": 10.9995,
+        "lon": 76.9855
+      },
+      {
+        "name": "Singanallur",
+        "lat": 10.9995,
+        "lon": 77.0255
+      },
+      {
+        "name": "Ondipudur",
+        "lat": 11.0035,
+        "lon": 77.0515
+      },
+      {
+        "name": "Irugur",
+        "lat": 11.0255,
+        "lon": 77.0725
+      },
+      {
+        "name": "Sulur Base",
+        "lat": 11.0265,
+        "lon": 77.1275
+      },
+      {
+        "name": "Peelamedu",
+        "lat": 11.0295,
+        "lon": 77.0175
+      },
+      {
+        "name": "Hopes College",
+        "lat": 11.0245,
+        "lon": 77.0095
+      },
+      {
+        "name": "Coimbatore Airport",
+        "lat": 11.0305,
+        "lon": 77.0435
+      },
+      {
+        "name": "Chinniyampalayam",
+        "lat": 11.0425,
+        "lon": 77.0655
+      },
+      {
+        "name": "Neelambur",
+        "lat": 11.0545,
+        "lon": 77.0985
+      },
+      {
+        "name": "Saravanampatti IT Hub",
+        "lat": 11.0825,
+        "lon": 76.9965
+      },
+      {
+        "name": "Ganapathy",
+        "lat": 11.0385,
+        "lon": 76.9815
+      },
+      {
+        "name": "Awarampalayam",
+        "lat": 11.0285,
+        "lon": 76.9785
+      },
+      {
+        "name": "Saibaba Colony",
+        "lat": 11.0285,
+        "lon": 76.9415
+      },
+      {
+        "name": "Kavundampalayam",
+        "lat": 11.0485,
+        "lon": 76.9355
+      },
+      {
+        "name": "Thudiyalur",
+        "lat": 11.0785,
+        "lon": 76.9315
+      },
+      {
+        "name": "Vadavalli",
+        "lat": 11.0315,
+        "lon": 76.9025
+      },
+      {
+        "name": "Marudhamalai",
+        "lat": 11.0455,
+        "lon": 76.8525
+      },
+      {
+        "name": "Perur Temple",
+        "lat": 10.9725,
+        "lon": 76.9155
+      },
+      {
+        "name": "Kuniyamuthur",
+        "lat": 10.9585,
+        "lon": 76.9455
+      },
+      {
+        "name": "Kovaipudur",
+        "lat": 10.9385,
+        "lon": 76.9285
+      },
+      {
+        "name": "Sundarapuram",
+        "lat": 10.9485,
+        "lon": 76.9725
+      },
+      {
+        "name": "Madukkarai",
+        "lat": 10.9025,
+        "lon": 76.9585
+      },
+      {
+        "name": "Chettipalayam",
+        "lat": 10.8925,
+        "lon": 77.0255
+      },
+      {
+        "name": "Kinathukadavu",
+        "lat": 10.8255,
+        "lon": 77.0185
+      },
+      {
+        "name": "Pollachi Central",
+        "lat": 10.6585,
+        "lon": 77.0085
+      },
+      {
+        "name": "Mahalingapuram",
+        "lat": 10.6685,
+        "lon": 77.0185
+      },
+      {
+        "name": "Anaimalai",
+        "lat": 10.5825,
+        "lon": 76.9325
+      },
+      {
+        "name": "Kottur",
+        "lat": 10.5355,
+        "lon": 76.9825
+      },
+      {
+        "name": "Valparai Plateau",
+        "lat": 10.3255,
+        "lon": 76.9555
+      },
+      {
+        "name": "Sholayar Dam",
+        "lat": 10.2985,
+        "lon": 76.8815
+      },
+      {
+        "name": "Mettupalayam",
+        "lat": 11.3005,
+        "lon": 76.9405
+      },
+      {
+        "name": "Sirumugai",
+        "lat": 11.3325,
+        "lon": 77.0055
+      },
+      {
+        "name": "Karamadai",
+        "lat": 11.2425,
+        "lon": 76.9585
+      },
+      {
+        "name": "Annur",
+        "lat": 11.2325,
+        "lon": 77.1325
+      }
+    ]
+  },
+  "Cuddalore": {
+    "headquarters": "Cuddalore",
+    "region_type": "Cyclone-Prone Maritime Coastal Belt",
+    "localities": [
+      {
+        "name": "Cuddalore Port",
+        "lat": 11.725,
+        "lon": 79.771
+      },
+      {
+        "name": "Manjakuppam",
+        "lat": 11.758,
+        "lon": 79.761
+      },
+      {
+        "name": "Thirupapuliyur",
+        "lat": 11.748,
+        "lon": 79.745
+      },
+      {
+        "name": "Semmandalam",
+        "lat": 11.765,
+        "lon": 79.732
+      },
+      {
+        "name": "Nellikuppam",
+        "lat": 11.775,
+        "lon": 79.672
+      },
+      {
+        "name": "Melpattampakkam",
+        "lat": 11.772,
+        "lon": 79.625
+      },
+      {
+        "name": "Panruti",
+        "lat": 11.774,
+        "lon": 79.553
+      },
+      {
+        "name": "Vadalur",
+        "lat": 11.558,
+        "lon": 79.552
+      },
+      {
+        "name": "Kurinjipadi",
+        "lat": 11.564,
+        "lon": 79.596
+      },
+      {
+        "name": "Neyveli Township",
+        "lat": 11.599,
+        "lon": 79.486
+      },
+      {
+        "name": "Mandarakuppam",
+        "lat": 11.532,
+        "lon": 79.472
+      },
+      {
+        "name": "Vadakkuvellur",
+        "lat": 11.585,
+        "lon": 79.432
+      },
+      {
+        "name": "Vridhachalam",
+        "lat": 11.516,
+        "lon": 79.324
+      },
+      {
+        "name": "Pennadam",
+        "lat": 11.398,
+        "lon": 79.235
+      },
+      {
+        "name": "Mangalampettai",
+        "lat": 11.605,
+        "lon": 79.285
+      },
+      {
+        "name": "Tittagudi",
+        "lat": 11.412,
+        "lon": 79.115
+      },
+      {
+        "name": "Veppur",
+        "lat": 11.545,
+        "lon": 79.052
+      },
+      {
+        "name": "Chidambaram",
+        "lat": 11.399,
+        "lon": 79.693
+      },
+      {
+        "name": "Annamalai Nagar",
+        "lat": 11.385,
+        "lon": 79.712
+      },
+      {
+        "name": "Bhuvanagiri",
+        "lat": 11.458,
+        "lon": 79.642
+      },
+      {
+        "name": "Parangipettai",
+        "lat": 11.498,
+        "lon": 79.765
+      },
+      {
+        "name": "Pichavaram Mangrove",
+        "lat": 11.425,
+        "lon": 79.782
+      },
+      {
+        "name": "Killai",
+        "lat": 11.442,
+        "lon": 79.795
+      },
+      {
+        "name": "Kattumannarkoil",
+        "lat": 11.275,
+        "lon": 79.552
+      },
+      {
+        "name": "Lalpet",
+        "lat": 11.298,
+        "lon": 79.585
+      }
+    ]
+  },
+  "Dharmapuri": {
+    "headquarters": "Dharmapuri",
+    "region_type": "North-Western Dry Plateau & Sericulture Zone",
+    "localities": [
+      {
+        "name": "Dharmapuri Central",
+        "lat": 12.121,
+        "lon": 78.158
+      },
+      {
+        "name": "Matlampatti",
+        "lat": 12.215,
+        "lon": 78.185
+      },
+      {
+        "name": "Karimangalam",
+        "lat": 12.308,
+        "lon": 78.205
+      },
+      {
+        "name": "Kambainallur",
+        "lat": 12.185,
+        "lon": 78.332
+      },
+      {
+        "name": "Morappur",
+        "lat": 12.128,
+        "lon": 78.412
+      },
+      {
+        "name": "Harur",
+        "lat": 12.062,
+        "lon": 78.494
+      },
+      {
+        "name": "Theerthamalai",
+        "lat": 12.112,
+        "lon": 78.605
+      },
+      {
+        "name": "Kottapatti",
+        "lat": 11.985,
+        "lon": 78.632
+      },
+      {
+        "name": "Pappireddipatti",
+        "lat": 11.916,
+        "lon": 78.368
+      },
+      {
+        "name": "Kadathur",
+        "lat": 12.015,
+        "lon": 78.298
+      },
+      {
+        "name": "Bommidi",
+        "lat": 11.928,
+        "lon": 78.245
+      },
+      {
+        "name": "Palacode",
+        "lat": 12.308,
+        "lon": 78.077
+      },
+      {
+        "name": "Marandahalli",
+        "lat": 12.405,
+        "lon": 78.012
+      },
+      {
+        "name": "Pennagaram",
+        "lat": 12.134,
+        "lon": 77.893
+      },
+      {
+        "name": "Hogenakkal Falls",
+        "lat": 12.118,
+        "lon": 77.778
+      },
+      {
+        "name": "Eriyur",
+        "lat": 12.025,
+        "lon": 77.815
+      },
+      {
+        "name": "Papparapatti",
+        "lat": 12.182,
+        "lon": 78.072
+      },
+      {
+        "name": "Indur",
+        "lat": 12.148,
+        "lon": 78.015
+      }
+    ]
+  },
+  "Dindigul": {
+    "headquarters": "Dindigul",
+    "region_type": "Central Foothills / Semi-Arid Lock & Tannery City",
+    "localities": [
+      {
+        "name": "Dindigul Fort",
+        "lat": 10.367,
+        "lon": 77.98
+      },
+      {
+        "name": "Begambur",
+        "lat": 10.355,
+        "lon": 77.972
+      },
+      {
+        "name": "Nagal Nagar",
+        "lat": 10.352,
+        "lon": 77.992
+      },
+      {
+        "name": "Siluvathur",
+        "lat": 10.345,
+        "lon": 78.112
+      },
+      {
+        "name": "Sanarpatti",
+        "lat": 10.285,
+        "lon": 78.145
+      },
+      {
+        "name": "Natham",
+        "lat": 10.228,
+        "lon": 78.237
+      },
+      {
+        "name": "Vadamadurai",
+        "lat": 10.478,
+        "lon": 78.082
+      },
+      {
+        "name": "Vedasandur",
+        "lat": 10.532,
+        "lon": 77.955
+      },
+      {
+        "name": "Gujiliamparai",
+        "lat": 10.655,
+        "lon": 78.125
+      },
+      {
+        "name": "Oddanchatram",
+        "lat": 10.487,
+        "lon": 77.747
+      },
+      {
+        "name": "Palani Temple",
+        "lat": 10.45,
+        "lon": 77.518
+      },
+      {
+        "name": "Ayakudi",
+        "lat": 10.442,
+        "lon": 77.585
+      },
+      {
+        "name": "Ayyampalayam",
+        "lat": 10.198,
+        "lon": 77.745
+      },
+      {
+        "name": "Nilakkottai",
+        "lat": 10.161,
+        "lon": 77.863
+      },
+      {
+        "name": "Batlagundu",
+        "lat": 10.162,
+        "lon": 77.765
+      },
+      {
+        "name": "Pattiveeranpatti",
+        "lat": 10.185,
+        "lon": 77.712
+      },
+      {
+        "name": "Kodaikanal Lake",
+        "lat": 10.238,
+        "lon": 77.489
+      },
+      {
+        "name": "Shenbaganur",
+        "lat": 10.232,
+        "lon": 77.512
+      },
+      {
+        "name": "Silver Cascade",
+        "lat": 10.252,
+        "lon": 77.525
+      },
+      {
+        "name": "Pillar Rocks",
+        "lat": 10.215,
+        "lon": 77.468
+      },
+      {
+        "name": "Vattakanal",
+        "lat": 10.208,
+        "lon": 77.485
+      },
+      {
+        "name": "Poombarai",
+        "lat": 10.258,
+        "lon": 77.408
+      },
+      {
+        "name": "Mannavanur",
+        "lat": 10.285,
+        "lon": 77.348
+      },
+      {
+        "name": "Thandikudi",
+        "lat": 10.312,
+        "lon": 77.638
+      }
+    ]
+  },
+  "Erode": {
+    "headquarters": "Erode",
+    "region_type": "Cauvery Basin Interior / Textile & Turmeric City",
+    "localities": [
+      {
+        "name": "Erode Central",
+        "lat": 11.341,
+        "lon": 77.717
+      },
+      {
+        "name": "Surampatti",
+        "lat": 11.328,
+        "lon": 77.705
+      },
+      {
+        "name": "Marapalam",
+        "lat": 11.332,
+        "lon": 77.738
+      },
+      {
+        "name": "Solar Bus Stand",
+        "lat": 11.305,
+        "lon": 77.748
+      },
+      {
+        "name": "Thindal Murugan",
+        "lat": 11.338,
+        "lon": 77.675
+      },
+      {
+        "name": "Veerappanchatram",
+        "lat": 11.365,
+        "lon": 77.712
+      },
+      {
+        "name": "Periyasemur",
+        "lat": 11.378,
+        "lon": 77.708
+      },
+      {
+        "name": "BP Agraharam",
+        "lat": 11.372,
+        "lon": 77.738
+      },
+      {
+        "name": "Karungalpalayam",
+        "lat": 11.348,
+        "lon": 77.742
+      },
+      {
+        "name": "Chithode",
+        "lat": 11.412,
+        "lon": 77.678
+      },
+      {
+        "name": "Bhavani Sangameshwarar",
+        "lat": 11.446,
+        "lon": 77.683
+      },
+      {
+        "name": "Nasiyanur",
+        "lat": 11.335,
+        "lon": 77.618
+      },
+      {
+        "name": "Perundurai SIPCOT",
+        "lat": 11.275,
+        "lon": 77.583
+      },
+      {
+        "name": "Vijayamangalam",
+        "lat": 11.238,
+        "lon": 77.505
+      },
+      {
+        "name": "Chennimalai Handloom",
+        "lat": 11.168,
+        "lon": 77.612
+      },
+      {
+        "name": "Arachalur",
+        "lat": 11.205,
+        "lon": 77.702
+      },
+      {
+        "name": "Kodumudi",
+        "lat": 11.077,
+        "lon": 77.886
+      },
+      {
+        "name": "Sivagiri",
+        "lat": 11.122,
+        "lon": 77.785
+      },
+      {
+        "name": "Modakkurichi",
+        "lat": 11.228,
+        "lon": 77.765
+      },
+      {
+        "name": "Gobichettipalayam",
+        "lat": 11.454,
+        "lon": 77.437
+      },
+      {
+        "name": "Nambiyur",
+        "lat": 11.362,
+        "lon": 77.325
+      },
+      {
+        "name": "Sathyamangalam",
+        "lat": 11.504,
+        "lon": 77.238
+      },
+      {
+        "name": "Bannari",
+        "lat": 11.545,
+        "lon": 77.168
+      },
+      {
+        "name": "Bhavanisagar Dam",
+        "lat": 11.472,
+        "lon": 77.112
+      },
+      {
+        "name": "Thalavadi Hills",
+        "lat": 11.782,
+        "lon": 77.015
+      },
+      {
+        "name": "Anthiyur",
+        "lat": 11.583,
+        "lon": 77.596
+      },
+      {
+        "name": "Appakudal",
+        "lat": 11.528,
+        "lon": 77.625
+      },
+      {
+        "name": "Ammapettai",
+        "lat": 11.632,
+        "lon": 77.712
+      },
+      {
+        "name": "Bargur Hills",
+        "lat": 11.748,
+        "lon": 77.545
+      }
+    ]
+  },
+  "Kallakurichi": {
+    "headquarters": "Kallakurichi",
+    "region_type": "Eastern Interior / Agriculture & Hill Forest",
+    "localities": [
+      {
+        "name": "Kallakurichi Central",
+        "lat": 11.738,
+        "lon": 78.963
+      },
+      {
+        "name": "Embalam",
+        "lat": 11.722,
+        "lon": 78.932
+      },
+      {
+        "name": "Kachirayapalayam",
+        "lat": 11.775,
+        "lon": 78.865
+      },
+      {
+        "name": "Vadakanandal",
+        "lat": 11.792,
+        "lon": 78.842
+      },
+      {
+        "name": "Chinnasalem",
+        "lat": 11.644,
+        "lon": 78.892
+      },
+      {
+        "name": "Nainarpalayam",
+        "lat": 11.578,
+        "lon": 78.845
+      },
+      {
+        "name": "Melnariyappanur",
+        "lat": 11.638,
+        "lon": 78.985
+      },
+      {
+        "name": "Sankarapuram",
+        "lat": 11.886,
+        "lon": 78.917
+      },
+      {
+        "name": "Moongilthuraipattu",
+        "lat": 11.952,
+        "lon": 78.852
+      },
+      {
+        "name": "Rishivandiyam",
+        "lat": 11.815,
+        "lon": 79.102
+      },
+      {
+        "name": "Thiagadurgam",
+        "lat": 11.742,
+        "lon": 79.085
+      },
+      {
+        "name": "Ulundurpet Junction",
+        "lat": 11.688,
+        "lon": 79.289
+      },
+      {
+        "name": "Asanur",
+        "lat": 11.652,
+        "lon": 79.232
+      },
+      {
+        "name": "Elavanasur Kottai",
+        "lat": 11.712,
+        "lon": 79.182
+      },
+      {
+        "name": "Tirukoilur",
+        "lat": 11.956,
+        "lon": 79.202
+      },
+      {
+        "name": "Arakandanallur",
+        "lat": 11.968,
+        "lon": 79.215
+      },
+      {
+        "name": "Manalurpet",
+        "lat": 12.002,
+        "lon": 79.085
+      },
+      {
+        "name": "Kalvarayan Hills",
+        "lat": 11.821,
+        "lon": 78.724
+      },
+      {
+        "name": "Serapattu",
+        "lat": 11.872,
+        "lon": 78.782
+      }
+    ]
+  },
+  "Kanchipuram": {
+    "headquarters": "Kanchipuram",
+    "region_type": "Northern Palar Basin / Silk & Auto Corridor",
+    "localities": [
+      {
+        "name": "Kanchipuram Central",
+        "lat": 12.834,
+        "lon": 79.703
+      },
+      {
+        "name": "Chinna Kanchipuram",
+        "lat": 12.822,
+        "lon": 79.725
+      },
+      {
+        "name": "Periya Kanchipuram",
+        "lat": 12.842,
+        "lon": 79.695
+      },
+      {
+        "name": "Sevilimedu",
+        "lat": 12.812,
+        "lon": 79.708
+      },
+      {
+        "name": "Orikkai",
+        "lat": 12.802,
+        "lon": 79.728
+      },
+      {
+        "name": "Walajabad",
+        "lat": 12.796,
+        "lon": 79.824
+      },
+      {
+        "name": "Parandur Airport Site",
+        "lat": 12.985,
+        "lon": 79.742
+      },
+      {
+        "name": "Ekanapuram",
+        "lat": 12.998,
+        "lon": 79.715
+      },
+      {
+        "name": "Sunguvarchatram",
+        "lat": 12.932,
+        "lon": 79.878
+      },
+      {
+        "name": "Sriperumbudur",
+        "lat": 12.969,
+        "lon": 79.944
+      },
+      {
+        "name": "Mambakkam",
+        "lat": 12.925,
+        "lon": 79.982
+      },
+      {
+        "name": "Vallam Vadagal",
+        "lat": 12.942,
+        "lon": 79.965
+      },
+      {
+        "name": "Oragadam Auto Hub",
+        "lat": 12.835,
+        "lon": 79.948
+      },
+      {
+        "name": "Padappai",
+        "lat": 12.878,
+        "lon": 80.015
+      },
+      {
+        "name": "Manimangalam",
+        "lat": 12.915,
+        "lon": 80.042
+      },
+      {
+        "name": "Kundrathur Murugan",
+        "lat": 12.998,
+        "lon": 80.096
+      },
+      {
+        "name": "Kovur",
+        "lat": 13.008,
+        "lon": 80.125
+      },
+      {
+        "name": "Somangalam",
+        "lat": 12.948,
+        "lon": 80.072
+      },
+      {
+        "name": "Uthiramerur",
+        "lat": 12.614,
+        "lon": 79.756
+      },
+      {
+        "name": "Kaliyampoondi",
+        "lat": 12.648,
+        "lon": 79.782
+      },
+      {
+        "name": "Salavakkam",
+        "lat": 12.685,
+        "lon": 79.865
+      },
+      {
+        "name": "Magaral",
+        "lat": 12.752,
+        "lon": 79.625
+      }
+    ]
+  },
+  "Kanniyakumari": {
+    "headquarters": "Nagercoil",
+    "region_type": "Southern Coastal / High Rainfall Peninsular Tip",
+    "localities": [
+      {
+        "name": "Nagercoil Central",
+        "lat": 8.183,
+        "lon": 77.411
+      },
+      {
+        "name": "Vadasery",
+        "lat": 8.192,
+        "lon": 77.425
+      },
+      {
+        "name": "Kottar",
+        "lat": 8.168,
+        "lon": 77.432
+      },
+      {
+        "name": "Asaripallam",
+        "lat": 8.178,
+        "lon": 77.382
+      },
+      {
+        "name": "Chunkankadai",
+        "lat": 8.212,
+        "lon": 77.378
+      },
+      {
+        "name": "Thovalai Flower Market",
+        "lat": 8.242,
+        "lon": 77.485
+      },
+      {
+        "name": "Boothapandi",
+        "lat": 8.265,
+        "lon": 77.442
+      },
+      {
+        "name": "Erachakulam",
+        "lat": 8.232,
+        "lon": 77.422
+      },
+      {
+        "name": "Kanyakumari Cape",
+        "lat": 8.088,
+        "lon": 77.538
+      },
+      {
+        "name": "Vivekananda Rock",
+        "lat": 8.078,
+        "lon": 77.552
+      },
+      {
+        "name": "Suchindram",
+        "lat": 8.155,
+        "lon": 77.465
+      },
+      {
+        "name": "Agastheeswaram",
+        "lat": 8.115,
+        "lon": 77.512
+      },
+      {
+        "name": "Padmanabhapuram",
+        "lat": 8.243,
+        "lon": 77.399
+      },
+      {
+        "name": "Thuckalay",
+        "lat": 8.248,
+        "lon": 77.372
+      },
+      {
+        "name": "Colachel Port",
+        "lat": 8.177,
+        "lon": 77.258
+      },
+      {
+        "name": "Manavalakurichi",
+        "lat": 8.142,
+        "lon": 77.305
+      },
+      {
+        "name": "Muttom Beach",
+        "lat": 8.125,
+        "lon": 77.322
+      },
+      {
+        "name": "Mandaikadu",
+        "lat": 8.162,
+        "lon": 77.285
+      },
+      {
+        "name": "Karungal",
+        "lat": 8.225,
+        "lon": 77.238
+      },
+      {
+        "name": "Marthandam",
+        "lat": 8.305,
+        "lon": 77.218
+      },
+      {
+        "name": "Kuzhithurai",
+        "lat": 8.32,
+        "lon": 77.194
+      },
+      {
+        "name": "Kaliyakkavilai",
+        "lat": 8.335,
+        "lon": 77.158
+      },
+      {
+        "name": "Arumanai",
+        "lat": 8.378,
+        "lon": 77.235
+      },
+      {
+        "name": "Kulasekharam",
+        "lat": 8.358,
+        "lon": 77.298
+      },
+      {
+        "name": "Pechiparai Dam",
+        "lat": 8.412,
+        "lon": 77.315
+      },
+      {
+        "name": "Perunchani Dam",
+        "lat": 8.385,
+        "lon": 77.348
+      },
+      {
+        "name": "Thiruvattar",
+        "lat": 8.337,
+        "lon": 77.272
+      }
+    ]
+  },
+  "Karur": {
+    "headquarters": "Karur",
+    "region_type": "Central River Basin / Textile & Paper Corridor",
+    "localities": [
+      {
+        "name": "Karur Central",
+        "lat": 10.96,
+        "lon": 78.076
+      },
+      {
+        "name": "Pasupathipalayam",
+        "lat": 10.968,
+        "lon": 78.095
+      },
+      {
+        "name": "Thanthonimalai",
+        "lat": 10.932,
+        "lon": 78.082
+      },
+      {
+        "name": "Vengamedu",
+        "lat": 10.978,
+        "lon": 78.065
+      },
+      {
+        "name": "Puliyur Cement",
+        "lat": 10.962,
+        "lon": 78.185
+      },
+      {
+        "name": "Uppidamangalam",
+        "lat": 10.915,
+        "lon": 78.172
+      },
+      {
+        "name": "Velliyanai",
+        "lat": 10.842,
+        "lon": 78.115
+      },
+      {
+        "name": "Mayanur Barrage",
+        "lat": 10.957,
+        "lon": 78.232
+      },
+      {
+        "name": "Lalapet",
+        "lat": 10.942,
+        "lon": 78.298
+      },
+      {
+        "name": "Krishnarayapuram",
+        "lat": 10.938,
+        "lon": 78.335
+      },
+      {
+        "name": "Kulithalai",
+        "lat": 10.933,
+        "lon": 78.416
+      },
+      {
+        "name": "Nangavaram",
+        "lat": 10.902,
+        "lon": 78.472
+      },
+      {
+        "name": "Thogamalai",
+        "lat": 10.748,
+        "lon": 78.435
+      },
+      {
+        "name": "Aravakurichi",
+        "lat": 10.772,
+        "lon": 77.91
+      },
+      {
+        "name": "Pallapatti",
+        "lat": 10.755,
+        "lon": 77.882
+      },
+      {
+        "name": "Chinnadharapuram",
+        "lat": 10.825,
+        "lon": 77.812
+      },
+      {
+        "name": "K. Paramathi",
+        "lat": 10.948,
+        "lon": 77.918
+      },
+      {
+        "name": "Pugalur Paper Mills",
+        "lat": 11.082,
+        "lon": 78.005
+      },
+      {
+        "name": "TNPL Kagithapuram",
+        "lat": 11.055,
+        "lon": 77.992
+      }
+    ]
+  },
+  "Krishnagiri": {
+    "headquarters": "Krishnagiri",
+    "region_type": "Northern High-Altitude Plateau / Mango & Auto SEZ",
+    "localities": [
+      {
+        "name": "Krishnagiri Town",
+        "lat": 12.518,
+        "lon": 78.213
+      },
+      {
+        "name": "Kattiganapalli",
+        "lat": 12.532,
+        "lon": 78.225
+      },
+      {
+        "name": "Kundarapalli",
+        "lat": 12.585,
+        "lon": 78.148
+      },
+      {
+        "name": "Rayakottai Fort",
+        "lat": 12.512,
+        "lon": 78.035
+      },
+      {
+        "name": "Kaveripattinam",
+        "lat": 12.428,
+        "lon": 78.212
+      },
+      {
+        "name": "Pochampalli",
+        "lat": 12.336,
+        "lon": 78.369
+      },
+      {
+        "name": "Nagarasampatti",
+        "lat": 12.302,
+        "lon": 78.305
+      },
+      {
+        "name": "Barur Lake",
+        "lat": 12.348,
+        "lon": 78.272
+      },
+      {
+        "name": "Uthangarai",
+        "lat": 12.268,
+        "lon": 78.537
+      },
+      {
+        "name": "Singarapettai",
+        "lat": 12.235,
+        "lon": 78.612
+      },
+      {
+        "name": "Samalpatti",
+        "lat": 12.342,
+        "lon": 78.472
+      },
+      {
+        "name": "Mathur",
+        "lat": 12.442,
+        "lon": 78.385
+      },
+      {
+        "name": "Hosur Central",
+        "lat": 12.74,
+        "lon": 77.825
+      },
+      {
+        "name": "Bagalur",
+        "lat": 12.842,
+        "lon": 77.898
+      },
+      {
+        "name": "SIPCOT 1 Hosur",
+        "lat": 12.725,
+        "lon": 77.842
+      },
+      {
+        "name": "SIPCOT 2 Hosur",
+        "lat": 12.768,
+        "lon": 77.785
+      },
+      {
+        "name": "Mookondapalli",
+        "lat": 12.735,
+        "lon": 77.808
+      },
+      {
+        "name": "Jujuvadi",
+        "lat": 12.748,
+        "lon": 77.772
+      },
+      {
+        "name": "Thorapalli",
+        "lat": 12.705,
+        "lon": 77.835
+      },
+      {
+        "name": "Kelamangalam",
+        "lat": 12.604,
+        "lon": 77.854
+      },
+      {
+        "name": "Denkanikottai",
+        "lat": 12.525,
+        "lon": 77.788
+      },
+      {
+        "name": "Thally (Little England)",
+        "lat": 12.585,
+        "lon": 77.652
+      },
+      {
+        "name": "Anchetty Hills",
+        "lat": 12.355,
+        "lon": 77.732
+      },
+      {
+        "name": "Berigai",
+        "lat": 12.795,
+        "lon": 77.962
+      },
+      {
+        "name": "Shoolagiri",
+        "lat": 12.668,
+        "lon": 78.012
+      }
+    ]
+  },
+  "Madurai": {
+    "headquarters": "Madurai",
+    "region_type": "Southern Vaigai Basin / Cultural Capital",
+    "localities": [
+      {
+        "name": "Meenakshi Amman Temple",
+        "lat": 9.9195,
+        "lon": 78.1193
+      },
+      {
+        "name": "Simmakkal",
+        "lat": 9.9285,
+        "lon": 78.1215
+      },
+      {
+        "name": "Goripalayam",
+        "lat": 9.9325,
+        "lon": 78.1315
+      },
+      {
+        "name": "Tallakulam",
+        "lat": 9.9355,
+        "lon": 78.1395
+      },
+      {
+        "name": "KK Nagar",
+        "lat": 9.9325,
+        "lon": 78.1485
+      },
+      {
+        "name": "Anna Nagar Madurai",
+        "lat": 9.9185,
+        "lon": 78.1525
+      },
+      {
+        "name": "Teppakulam Vandiyur",
+        "lat": 9.9125,
+        "lon": 78.1485
+      },
+      {
+        "name": "Sellur",
+        "lat": 9.9415,
+        "lon": 78.1155
+      },
+      {
+        "name": "Koodal Nagar",
+        "lat": 9.9585,
+        "lon": 78.1025
+      },
+      {
+        "name": "Iyer Bungalow",
+        "lat": 9.9655,
+        "lon": 78.1385
+      },
+      {
+        "name": "Othakadai",
+        "lat": 9.9685,
+        "lon": 78.1885
+      },
+      {
+        "name": "Thirumohur Temple",
+        "lat": 9.9525,
+        "lon": 78.2055
+      },
+      {
+        "name": "Alagar Kovil Hills",
+        "lat": 10.0825,
+        "lon": 78.2185
+      },
+      {
+        "name": "Melur",
+        "lat": 10.0315,
+        "lon": 78.3375
+      },
+      {
+        "name": "Kottampatti",
+        "lat": 10.1425,
+        "lon": 78.4325
+      },
+      {
+        "name": "Usilampatti",
+        "lat": 9.9675,
+        "lon": 77.7945
+      },
+      {
+        "name": "Sedapatti",
+        "lat": 9.8455,
+        "lon": 77.7855
+      },
+      {
+        "name": "Thirumangalam",
+        "lat": 9.8255,
+        "lon": 77.9855
+      },
+      {
+        "name": "Kappalur Industrial",
+        "lat": 9.8455,
+        "lon": 78.0255
+      },
+      {
+        "name": "Kallikudi",
+        "lat": 9.7125,
+        "lon": 77.9555
+      },
+      {
+        "name": "Thiruparankundram Murugan",
+        "lat": 9.8825,
+        "lon": 78.0725
+      },
+      {
+        "name": "Pasumalai",
+        "lat": 9.8985,
+        "lon": 78.0855
+      },
+      {
+        "name": "Tirunagar",
+        "lat": 9.8715,
+        "lon": 78.0585
+      },
+      {
+        "name": "Palanganatham",
+        "lat": 9.9055,
+        "lon": 78.0985
+      },
+      {
+        "name": "Villapuram",
+        "lat": 9.8995,
+        "lon": 78.1285
+      },
+      {
+        "name": "Avaniyapuram",
+        "lat": 9.8825,
+        "lon": 78.1185
+      },
+      {
+        "name": "Madurai Airport",
+        "lat": 9.8345,
+        "lon": 78.0935
+      },
+      {
+        "name": "Vadipatti",
+        "lat": 10.0755,
+        "lon": 77.9575
+      },
+      {
+        "name": "Sholavandan (Betel Leaves)",
+        "lat": 10.0255,
+        "lon": 78.0055
+      },
+      {
+        "name": "Alanganallur (Jallikattu Arena)",
+        "lat": 10.0435,
+        "lon": 78.0935
+      },
+      {
+        "name": "Palamedu",
+        "lat": 10.0985,
+        "lon": 78.1125
+      }
+    ]
+  },
+  "Mayiladuthurai": {
+    "headquarters": "Mayiladuthurai",
+    "region_type": "Cauvery Delta / Eastern Coastal Granary",
+    "localities": [
+      {
+        "name": "Mayiladuthurai Central",
+        "lat": 11.101,
+        "lon": 79.652
+      },
+      {
+        "name": "Kornad Weaving Hub",
+        "lat": 11.112,
+        "lon": 79.638
+      },
+      {
+        "name": "Mannampandal",
+        "lat": 11.092,
+        "lon": 79.685
+      },
+      {
+        "name": "Kuthalam",
+        "lat": 11.084,
+        "lon": 79.544
+      },
+      {
+        "name": "Komal",
+        "lat": 11.052,
+        "lon": 79.512
+      },
+      {
+        "name": "Manganallur",
+        "lat": 11.035,
+        "lon": 79.612
+      },
+      {
+        "name": "Sembanarkoil",
+        "lat": 11.125,
+        "lon": 79.742
+      },
+      {
+        "name": "Tharangambadi (Tranquebar)",
+        "lat": 11.031,
+        "lon": 79.854
+      },
+      {
+        "name": "Porayar",
+        "lat": 11.025,
+        "lon": 79.835
+      },
+      {
+        "name": "Thirukadaiyur Abirami",
+        "lat": 11.075,
+        "lon": 79.812
+      },
+      {
+        "name": "Sirkazhi",
+        "lat": 11.237,
+        "lon": 79.736
+      },
+      {
+        "name": "Vaitheeswarankoil",
+        "lat": 11.201,
+        "lon": 79.712
+      },
+      {
+        "name": "Kollidam River Mouth",
+        "lat": 11.312,
+        "lon": 79.782
+      },
+      {
+        "name": "Poompuhar (Kaveripoompattinam)",
+        "lat": 11.144,
+        "lon": 79.851
+      },
+      {
+        "name": "Madhanam",
+        "lat": 11.265,
+        "lon": 79.795
+      },
+      {
+        "name": "Thirumullaivasal",
+        "lat": 11.242,
+        "lon": 79.835
+      }
+    ]
+  },
+  "Nagapattinam": {
+    "headquarters": "Nagapattinam",
+    "region_type": "Low-Lying Maritime Coast & Salt Swamp",
+    "localities": [
+      {
+        "name": "Nagapattinam Port",
+        "lat": 10.765,
+        "lon": 79.842
+      },
+      {
+        "name": "Nagore Dargah Shore",
+        "lat": 10.821,
+        "lon": 79.845
+      },
+      {
+        "name": "Sikkal Singaravelan Temple",
+        "lat": 10.758,
+        "lon": 79.782
+      },
+      {
+        "name": "Velankanni Basilica",
+        "lat": 10.68,
+        "lon": 79.847
+      },
+      {
+        "name": "Poigainallur",
+        "lat": 10.712,
+        "lon": 79.835
+      },
+      {
+        "name": "Kilvelur",
+        "lat": 10.718,
+        "lon": 79.704
+      },
+      {
+        "name": "Thirumarugal",
+        "lat": 10.842,
+        "lon": 79.735
+      },
+      {
+        "name": "Kangalancherry",
+        "lat": 10.745,
+        "lon": 79.722
+      },
+      {
+        "name": "Thirukkuvalai",
+        "lat": 10.612,
+        "lon": 79.734
+      },
+      {
+        "name": "Ettukudi Murugan",
+        "lat": 10.592,
+        "lon": 79.755
+      },
+      {
+        "name": "Vedaranyam Salt Town",
+        "lat": 10.373,
+        "lon": 79.852
+      },
+      {
+        "name": "Kodiyakarai (Point Calimere)",
+        "lat": 10.298,
+        "lon": 79.865
+      },
+      {
+        "name": "Thopputhurai",
+        "lat": 10.395,
+        "lon": 79.848
+      },
+      {
+        "name": "Voimedu",
+        "lat": 10.435,
+        "lon": 79.782
+      },
+      {
+        "name": "Thalainayar",
+        "lat": 10.552,
+        "lon": 79.795
+      }
+    ]
+  },
+  "Namakkal": {
+    "headquarters": "Namakkal",
+    "region_type": "Central Hilly / Poultry & Transport Capital",
+    "localities": [
+      {
+        "name": "Namakkal Anjaneyar Temple",
+        "lat": 11.218,
+        "lon": 78.167
+      },
+      {
+        "name": "Mohanur Road Namakkal",
+        "lat": 11.205,
+        "lon": 78.162
+      },
+      {
+        "name": "Sendamangalam",
+        "lat": 11.285,
+        "lon": 78.242
+      },
+      {
+        "name": "Kalangani",
+        "lat": 11.312,
+        "lon": 78.195
+      },
+      {
+        "name": "Erumaipatti",
+        "lat": 11.178,
+        "lon": 78.275
+      },
+      {
+        "name": "Mohanur Cauvery Bank",
+        "lat": 11.052,
+        "lon": 78.148
+      },
+      {
+        "name": "Paramathi",
+        "lat": 11.112,
+        "lon": 78.005
+      },
+      {
+        "name": "Velur Cauvery Bridge",
+        "lat": 11.047,
+        "lon": 78.016
+      },
+      {
+        "name": "Pandamangalam",
+        "lat": 11.058,
+        "lon": 78.065
+      },
+      {
+        "name": "Kabilarmalai Rock Temple",
+        "lat": 11.072,
+        "lon": 77.978
+      },
+      {
+        "name": "Jedarpalayam Dam",
+        "lat": 11.125,
+        "lon": 77.925
+      },
+      {
+        "name": "Tiruchengode Ardhanareeswarar",
+        "lat": 11.378,
+        "lon": 77.896
+      },
+      {
+        "name": "Kailasampalayam",
+        "lat": 11.362,
+        "lon": 77.915
+      },
+      {
+        "name": "Mallasamudram",
+        "lat": 11.482,
+        "lon": 77.985
+      },
+      {
+        "name": "Elachipalayam",
+        "lat": 11.398,
+        "lon": 77.995
+      },
+      {
+        "name": "Rasipuram Sago Mandi",
+        "lat": 11.458,
+        "lon": 78.175
+      },
+      {
+        "name": "Vennandur",
+        "lat": 11.518,
+        "lon": 78.085
+      },
+      {
+        "name": "Gurusamipalayam",
+        "lat": 11.535,
+        "lon": 78.052
+      },
+      {
+        "name": "Namagiripettai",
+        "lat": 11.465,
+        "lon": 78.265
+      },
+      {
+        "name": "Belukurichi",
+        "lat": 11.385,
+        "lon": 78.285
+      },
+      {
+        "name": "Kolli Hills (Semmedu)",
+        "lat": 11.248,
+        "lon": 78.341
+      },
+      {
+        "name": "Solakkadu Kolli Hills",
+        "lat": 11.282,
+        "lon": 78.332
+      },
+      {
+        "name": "Arapaleeswarar Falls",
+        "lat": 11.285,
+        "lon": 78.368
+      }
+    ]
+  },
+  "Nilgiris": {
+    "headquarters": "Udhagamandalam",
+    "region_type": "High Altitude Western Ghats / Orographic Rain Belt",
+    "localities": [
+      {
+        "name": "Ooty Charring Cross",
+        "lat": 11.41,
+        "lon": 76.695
+      },
+      {
+        "name": "Ooty Botanical Gardens",
+        "lat": 11.418,
+        "lon": 76.712
+      },
+      {
+        "name": "Ooty Lake & Boathouse",
+        "lat": 11.405,
+        "lon": 76.685
+      },
+      {
+        "name": "Fern Hill Palace Area",
+        "lat": 11.392,
+        "lon": 76.688
+      },
+      {
+        "name": "Lovedale Lawrence School",
+        "lat": 11.378,
+        "lon": 76.708
+      },
+      {
+        "name": "Doddabetta Peak (2637m)",
+        "lat": 11.402,
+        "lon": 76.735
+      },
+      {
+        "name": "Fingerpost Ooty",
+        "lat": 11.422,
+        "lon": 76.678
+      },
+      {
+        "name": "Ketti Valley View",
+        "lat": 11.372,
+        "lon": 76.738
+      },
+      {
+        "name": "Aruvankadu Cordite Factory",
+        "lat": 11.365,
+        "lon": 76.741
+      },
+      {
+        "name": "Wellington Cantonment",
+        "lat": 11.362,
+        "lon": 76.785
+      },
+      {
+        "name": "Coonoor Town",
+        "lat": 11.353,
+        "lon": 76.795
+      },
+      {
+        "name": "Bedford Coonoor",
+        "lat": 11.348,
+        "lon": 76.802
+      },
+      {
+        "name": "Sim's Park Coonoor",
+        "lat": 11.358,
+        "lon": 76.805
+      },
+      {
+        "name": "Kotagiri Tea Estates",
+        "lat": 11.431,
+        "lon": 76.877
+      },
+      {
+        "name": "Kil-Kotagiri",
+        "lat": 11.455,
+        "lon": 76.925
+      },
+      {
+        "name": "Kodanad Viewpoint",
+        "lat": 11.522,
+        "lon": 76.912
+      },
+      {
+        "name": "Gudalur Valley",
+        "lat": 11.507,
+        "lon": 76.494
+      },
+      {
+        "name": "Devala (Gold Mine Ridge)",
+        "lat": 11.482,
+        "lon": 76.385
+      },
+      {
+        "name": "Pandalur Tea Frontier",
+        "lat": 11.488,
+        "lon": 76.342
+      },
+      {
+        "name": "Naduvattam Shola",
+        "lat": 11.485,
+        "lon": 76.552
+      },
+      {
+        "name": "Pykara Lake & Dam",
+        "lat": 11.452,
+        "lon": 76.602
+      },
+      {
+        "name": "Glenmorgan Tea Estate",
+        "lat": 11.492,
+        "lon": 76.635
+      },
+      {
+        "name": "Masinagudi Wildlife",
+        "lat": 11.572,
+        "lon": 76.645
+      },
+      {
+        "name": "Mudumalai Tiger Reserve",
+        "lat": 11.585,
+        "lon": 76.535
+      }
+    ]
+  },
+  "Perambalur": {
+    "headquarters": "Perambalur",
+    "region_type": "Central Inland Plateau / Maize & Cotton Belt",
+    "localities": [
+      {
+        "name": "Perambalur Town",
+        "lat": 11.234,
+        "lon": 78.88
+      },
+      {
+        "name": "Vadakkumadhavi",
+        "lat": 11.252,
+        "lon": 78.872
+      },
+      {
+        "name": "Elambalur",
+        "lat": 11.228,
+        "lon": 78.845
+      },
+      {
+        "name": "Alathur",
+        "lat": 11.166,
+        "lon": 78.878
+      },
+      {
+        "name": "Padalur",
+        "lat": 11.125,
+        "lon": 78.865
+      },
+      {
+        "name": "Chettikulam Murugan",
+        "lat": 11.138,
+        "lon": 78.782
+      },
+      {
+        "name": "Siruvachur Madhurakaliamman",
+        "lat": 11.205,
+        "lon": 78.852
+      },
+      {
+        "name": "Kolakkanatham",
+        "lat": 11.248,
+        "lon": 78.965
+      },
+      {
+        "name": "Kunnam",
+        "lat": 11.241,
+        "lon": 79.023
+      },
+      {
+        "name": "Labbaikudikadu",
+        "lat": 11.352,
+        "lon": 78.985
+      },
+      {
+        "name": "Veppanthattai",
+        "lat": 11.332,
+        "lon": 78.835
+      },
+      {
+        "name": "V. Kalathur",
+        "lat": 11.365,
+        "lon": 78.848
+      },
+      {
+        "name": "Poolambadi",
+        "lat": 11.385,
+        "lon": 78.785
+      },
+      {
+        "name": "Arumbavoor Wood Carvings",
+        "lat": 11.392,
+        "lon": 78.725
+      }
+    ]
+  },
+  "Pudukkottai": {
+    "headquarters": "Pudukkottai",
+    "region_type": "Dry Southern Plains & Coastal Mangrove Belt",
+    "localities": [
+      {
+        "name": "Pudukkottai Central Palace",
+        "lat": 10.383,
+        "lon": 78.8
+      },
+      {
+        "name": "Machuvadi",
+        "lat": 10.365,
+        "lon": 78.825
+      },
+      {
+        "name": "SIPCOT Pudukkottai",
+        "lat": 10.425,
+        "lon": 78.815
+      },
+      {
+        "name": "Vellanur",
+        "lat": 10.452,
+        "lon": 78.745
+      },
+      {
+        "name": "Thirumayam Historic Fort",
+        "lat": 10.244,
+        "lon": 78.756
+      },
+      {
+        "name": "Ponnamaravathi",
+        "lat": 10.248,
+        "lon": 78.535
+      },
+      {
+        "name": "Karaiyur",
+        "lat": 10.295,
+        "lon": 78.612
+      },
+      {
+        "name": "Annavasal",
+        "lat": 10.468,
+        "lon": 78.698
+      },
+      {
+        "name": "Narthamalai Cave Temples",
+        "lat": 10.512,
+        "lon": 78.765
+      },
+      {
+        "name": "Viralimalai Peacock Sanctuary",
+        "lat": 10.605,
+        "lon": 78.542
+      },
+      {
+        "name": "Illuppur",
+        "lat": 10.518,
+        "lon": 78.625
+      },
+      {
+        "name": "Keeranur",
+        "lat": 10.575,
+        "lon": 78.788
+      },
+      {
+        "name": "Gandarvakottai",
+        "lat": 10.582,
+        "lon": 78.985
+      },
+      {
+        "name": "Alangudi",
+        "lat": 10.361,
+        "lon": 78.98
+      },
+      {
+        "name": "Vadakadu",
+        "lat": 10.312,
+        "lon": 79.035
+      },
+      {
+        "name": "Karambakkudi",
+        "lat": 10.462,
+        "lon": 79.025
+      },
+      {
+        "name": "Aranthangi Fort",
+        "lat": 10.166,
+        "lon": 78.996
+      },
+      {
+        "name": "Avudaiyarkoil Atmanatha",
+        "lat": 10.076,
+        "lon": 79.043
+      },
+      {
+        "name": "Mimisal Coastal Port",
+        "lat": 9.925,
+        "lon": 79.135
+      },
+      {
+        "name": "Manamelkudi",
+        "lat": 10.042,
+        "lon": 79.245
+      },
+      {
+        "name": "Kattumavadi",
+        "lat": 10.138,
+        "lon": 79.225
+      }
+    ]
+  },
+  "Ramanathapuram": {
+    "headquarters": "Ramanathapuram",
+    "region_type": "Southeast Arid Coastal Belt & Gulf of Mannar",
+    "localities": [
+      {
+        "name": "Ramanathapuram Palace",
+        "lat": 9.363,
+        "lon": 78.839
+      },
+      {
+        "name": "Pattinamkathan",
+        "lat": 9.378,
+        "lon": 78.855
+      },
+      {
+        "name": "Uchipuli Air Base",
+        "lat": 9.312,
+        "lon": 79.042
+      },
+      {
+        "name": "Mandapam Marine Park",
+        "lat": 9.278,
+        "lon": 79.125
+      },
+      {
+        "name": "Pamban Sea Bridge",
+        "lat": 9.281,
+        "lon": 79.215
+      },
+      {
+        "name": "Rameswaram Temple",
+        "lat": 9.287,
+        "lon": 79.312
+      },
+      {
+        "name": "Dhanushkodi Border Tip",
+        "lat": 9.176,
+        "lon": 79.418
+      },
+      {
+        "name": "Arichal Munai (India's End)",
+        "lat": 9.155,
+        "lon": 79.442
+      },
+      {
+        "name": "Thangachimadam",
+        "lat": 9.285,
+        "lon": 79.268
+      },
+      {
+        "name": "Devipattinam Navagraha",
+        "lat": 9.475,
+        "lon": 78.905
+      },
+      {
+        "name": "Uppoor",
+        "lat": 9.615,
+        "lon": 78.968
+      },
+      {
+        "name": "Tiruvadanai",
+        "lat": 9.785,
+        "lon": 78.912
+      },
+      {
+        "name": "Thondi Harbour",
+        "lat": 9.742,
+        "lon": 79.018
+      },
+      {
+        "name": "R.S. Mangalam",
+        "lat": 9.682,
+        "lon": 78.825
+      },
+      {
+        "name": "Paramakudi Vaigai",
+        "lat": 9.542,
+        "lon": 78.588
+      },
+      {
+        "name": "Emaneswaram",
+        "lat": 9.558,
+        "lon": 78.612
+      },
+      {
+        "name": "Parthibanur",
+        "lat": 9.612,
+        "lon": 78.472
+      },
+      {
+        "name": "Mudukulathur",
+        "lat": 9.339,
+        "lon": 78.508
+      },
+      {
+        "name": "Kamuthi",
+        "lat": 9.405,
+        "lon": 78.368
+      },
+      {
+        "name": "Abiramam",
+        "lat": 9.452,
+        "lon": 78.442
+      },
+      {
+        "name": "Sayalkudi",
+        "lat": 9.185,
+        "lon": 78.345
+      },
+      {
+        "name": "Kadaladi",
+        "lat": 9.232,
+        "lon": 78.482
+      },
+      {
+        "name": "Kilakarai Marine Port",
+        "lat": 9.231,
+        "lon": 78.784
+      },
+      {
+        "name": "Ervadi Dargah",
+        "lat": 9.215,
+        "lon": 78.725
+      },
+      {
+        "name": "Valinokkam Beach",
+        "lat": 9.165,
+        "lon": 78.652
+      }
+    ]
+  },
+  "Ranipet": {
+    "headquarters": "Ranipet",
+    "region_type": "Northern Palar Valley / Leather & Defense SEZ",
+    "localities": [
+      {
+        "name": "Ranipet Central",
+        "lat": 12.927,
+        "lon": 79.333
+      },
+      {
+        "name": "SIPCOT Ranipet",
+        "lat": 12.945,
+        "lon": 79.352
+      },
+      {
+        "name": "BHEL Township",
+        "lat": 12.955,
+        "lon": 79.315
+      },
+      {
+        "name": "Walajapet",
+        "lat": 12.983,
+        "lon": 79.358
+      },
+      {
+        "name": "Vannivedu",
+        "lat": 12.965,
+        "lon": 79.372
+      },
+      {
+        "name": "Arcot Heritage Fort",
+        "lat": 12.905,
+        "lon": 79.333
+      },
+      {
+        "name": "Melvisharam",
+        "lat": 12.915,
+        "lon": 79.255
+      },
+      {
+        "name": "Timiri",
+        "lat": 12.785,
+        "lon": 79.312
+      },
+      {
+        "name": "Kalavai",
+        "lat": 12.765,
+        "lon": 79.425
+      },
+      {
+        "name": "Arakkonam Junction",
+        "lat": 13.078,
+        "lon": 79.667
+      },
+      {
+        "name": "INS Rajali Naval Base",
+        "lat": 13.072,
+        "lon": 79.692
+      },
+      {
+        "name": "Thakkolam",
+        "lat": 13.012,
+        "lon": 79.745
+      },
+      {
+        "name": "Sholinghur Hill Temple",
+        "lat": 13.111,
+        "lon": 79.426
+      },
+      {
+        "name": "Kondapalayam",
+        "lat": 13.125,
+        "lon": 79.442
+      },
+      {
+        "name": "Banavaram",
+        "lat": 13.045,
+        "lon": 79.525
+      },
+      {
+        "name": "Kaveripakkam Lake",
+        "lat": 12.905,
+        "lon": 79.465
+      },
+      {
+        "name": "Nemili",
+        "lat": 13.018,
+        "lon": 79.615
+      },
+      {
+        "name": "Panapakkam",
+        "lat": 12.935,
+        "lon": 79.582
+      }
+    ]
+  },
+  "Salem": {
+    "headquarters": "Salem",
+    "region_type": "North Central Surrounded by Hills / Steel & Mango",
+    "localities": [
+      {
+        "name": "Salem Central Old Bus Stand",
+        "lat": 11.664,
+        "lon": 78.146
+      },
+      {
+        "name": "New Bus Stand Salem",
+        "lat": 11.672,
+        "lon": 78.132
+      },
+      {
+        "name": "Fairlands",
+        "lat": 11.678,
+        "lon": 78.142
+      },
+      {
+        "name": "Suramangalam Junction",
+        "lat": 11.678,
+        "lon": 78.118
+      },
+      {
+        "name": "Hasthampatti",
+        "lat": 11.684,
+        "lon": 78.156
+      },
+      {
+        "name": "Gorimedu",
+        "lat": 11.712,
+        "lon": 78.165
+      },
+      {
+        "name": "Kannankurichi Lake",
+        "lat": 11.725,
+        "lon": 78.182
+      },
+      {
+        "name": "Yercaud Lake Town",
+        "lat": 11.775,
+        "lon": 78.209
+      },
+      {
+        "name": "Shevaroy Hills Peak",
+        "lat": 11.832,
+        "lon": 78.252
+      },
+      {
+        "name": "Ammapet",
+        "lat": 11.655,
+        "lon": 78.178
+      },
+      {
+        "name": "Ponnammapet",
+        "lat": 11.662,
+        "lon": 78.168
+      },
+      {
+        "name": "Dadagapatti",
+        "lat": 11.638,
+        "lon": 78.145
+      },
+      {
+        "name": "Gugai",
+        "lat": 11.642,
+        "lon": 78.152
+      },
+      {
+        "name": "Kondalampatti Bypass",
+        "lat": 11.622,
+        "lon": 78.125
+      },
+      {
+        "name": "Udayapatti",
+        "lat": 11.648,
+        "lon": 78.212
+      },
+      {
+        "name": "Ayothiapattinam",
+        "lat": 11.658,
+        "lon": 78.245
+      },
+      {
+        "name": "Valapadi",
+        "lat": 11.652,
+        "lon": 78.395
+      },
+      {
+        "name": "Attur Sago Mandi",
+        "lat": 11.597,
+        "lon": 78.599
+      },
+      {
+        "name": "Narasingapuram",
+        "lat": 11.602,
+        "lon": 78.618
+      },
+      {
+        "name": "Thalaivasal Vegetable Market",
+        "lat": 11.582,
+        "lon": 78.748
+      },
+      {
+        "name": "Gangavalli",
+        "lat": 11.485,
+        "lon": 78.652
+      },
+      {
+        "name": "Tammampatti",
+        "lat": 11.442,
+        "lon": 78.495
+      },
+      {
+        "name": "Omalur",
+        "lat": 11.743,
+        "lon": 78.042
+      },
+      {
+        "name": "Tharamangalam Temple",
+        "lat": 11.698,
+        "lon": 77.978
+      },
+      {
+        "name": "Jalakandapuram Weaving",
+        "lat": 11.705,
+        "lon": 77.878
+      },
+      {
+        "name": "Mecheri",
+        "lat": 11.825,
+        "lon": 77.942
+      },
+      {
+        "name": "Mettur Dam Hydro Base",
+        "lat": 11.796,
+        "lon": 77.801
+      },
+      {
+        "name": "Kolathur Cauvery Bank",
+        "lat": 11.842,
+        "lon": 77.785
+      },
+      {
+        "name": "Edappadi",
+        "lat": 11.583,
+        "lon": 77.848
+      },
+      {
+        "name": "Sankagiri Fort",
+        "lat": 11.482,
+        "lon": 77.868
+      }
+    ]
+  },
+  "Sivaganga": {
+    "headquarters": "Sivaganga",
+    "region_type": "Chettinad Heritage & Semi-Arid Plains",
+    "localities": [
+      {
+        "name": "Sivaganga Palace Town",
+        "lat": 9.843,
+        "lon": 78.48
+      },
+      {
+        "name": "Manamadurai Pottery",
+        "lat": 9.697,
+        "lon": 78.455
+      },
+      {
+        "name": "SIPCOT Manamadurai",
+        "lat": 9.682,
+        "lon": 78.485
+      },
+      {
+        "name": "Thirupuvanam",
+        "lat": 9.825,
+        "lon": 78.275
+      },
+      {
+        "name": "Keeladi Archeological Site",
+        "lat": 9.862,
+        "lon": 78.185
+      },
+      {
+        "name": "Ilayangudi",
+        "lat": 9.752,
+        "lon": 78.632
+      },
+      {
+        "name": "Kalayar Kovil Temple",
+        "lat": 9.848,
+        "lon": 78.648
+      },
+      {
+        "name": "Maravamangalam",
+        "lat": 9.812,
+        "lon": 78.582
+      },
+      {
+        "name": "Nattarasankottai",
+        "lat": 9.868,
+        "lon": 78.552
+      },
+      {
+        "name": "Karaikudi Chettinad Mansions",
+        "lat": 10.073,
+        "lon": 78.773
+      },
+      {
+        "name": "Kottaiyur",
+        "lat": 10.098,
+        "lon": 78.795
+      },
+      {
+        "name": "Kandanur",
+        "lat": 10.125,
+        "lon": 78.815
+      },
+      {
+        "name": "Pallathur",
+        "lat": 10.142,
+        "lon": 78.835
+      },
+      {
+        "name": "Puduvayal",
+        "lat": 10.165,
+        "lon": 78.882
+      },
+      {
+        "name": "Devakottai Chettinad Capital",
+        "lat": 9.948,
+        "lon": 78.825
+      },
+      {
+        "name": "Tiruppattur",
+        "lat": 10.113,
+        "lon": 78.618
+      },
+      {
+        "name": "Pillayarpatti Rock Temple",
+        "lat": 10.122,
+        "lon": 78.675
+      },
+      {
+        "name": "Singampunari",
+        "lat": 10.185,
+        "lon": 78.442
+      },
+      {
+        "name": "Piranmalai Hills",
+        "lat": 10.242,
+        "lon": 78.412
+      }
+    ]
+  },
+  "Tenkasi": {
+    "headquarters": "Tenkasi",
+    "region_type": "Western Ghats Monsoon Entry Gate & Waterfalls",
+    "localities": [
+      {
+        "name": "Tenkasi Kasi Viswanathar",
+        "lat": 8.959,
+        "lon": 77.315
+      },
+      {
+        "name": "Melagaram",
+        "lat": 8.948,
+        "lon": 77.298
+      },
+      {
+        "name": "Courtallam Main Falls",
+        "lat": 8.932,
+        "lon": 77.275
+      },
+      {
+        "name": "Five Falls Courtallam",
+        "lat": 8.925,
+        "lon": 77.248
+      },
+      {
+        "name": "Old Courtallam",
+        "lat": 8.952,
+        "lon": 77.262
+      },
+      {
+        "name": "Shencottai Ghats Gateway",
+        "lat": 8.983,
+        "lon": 77.245
+      },
+      {
+        "name": "Puliyarai Kerala Border",
+        "lat": 8.995,
+        "lon": 77.198
+      },
+      {
+        "name": "Ilanji Kumarar Temple",
+        "lat": 8.962,
+        "lon": 77.288
+      },
+      {
+        "name": "Surandai",
+        "lat": 8.985,
+        "lon": 77.425
+      },
+      {
+        "name": "Sambavar Vadakarai",
+        "lat": 9.012,
+        "lon": 77.378
+      },
+      {
+        "name": "Ayikudi Balasubramanya",
+        "lat": 8.988,
+        "lon": 77.348
+      },
+      {
+        "name": "Kadayanallur",
+        "lat": 9.076,
+        "lon": 77.345
+      },
+      {
+        "name": "Chockampatti",
+        "lat": 9.142,
+        "lon": 77.368
+      },
+      {
+        "name": "Vasudevanallur",
+        "lat": 9.235,
+        "lon": 77.418
+      },
+      {
+        "name": "Sivagiri",
+        "lat": 9.342,
+        "lon": 77.432
+      },
+      {
+        "name": "Rayagiri",
+        "lat": 9.285,
+        "lon": 77.425
+      },
+      {
+        "name": "Sankarankovil Sankaranarayana",
+        "lat": 9.172,
+        "lon": 77.534
+      },
+      {
+        "name": "Thiruvenkadam",
+        "lat": 9.278,
+        "lon": 77.675
+      },
+      {
+        "name": "Karivalamvandanallur",
+        "lat": 9.245,
+        "lon": 77.545
+      },
+      {
+        "name": "Alangulam",
+        "lat": 8.868,
+        "lon": 77.502
+      },
+      {
+        "name": "Nettur",
+        "lat": 8.892,
+        "lon": 77.465
+      },
+      {
+        "name": "Pavoorchatram Junction",
+        "lat": 8.915,
+        "lon": 77.382
+      },
+      {
+        "name": "Keezhapavoor",
+        "lat": 8.912,
+        "lon": 77.412
+      },
+      {
+        "name": "Veerakeralampudur",
+        "lat": 8.952,
+        "lon": 77.445
+      }
+    ]
+  },
+  "Thanjavur": {
+    "headquarters": "Thanjavur",
+    "region_type": "Granary of Tamil Nadu / Delta Civilization",
+    "localities": [
+      {
+        "name": "Brihadisvara Big Temple",
+        "lat": 10.7825,
+        "lon": 79.1315
+      },
+      {
+        "name": "Thanjavur Old Bus Stand",
+        "lat": 10.7875,
+        "lon": 79.1375
+      },
+      {
+        "name": "New Bus Stand Thanjavur",
+        "lat": 10.7655,
+        "lon": 79.1125
+      },
+      {
+        "name": "Medical College Area",
+        "lat": 10.7555,
+        "lon": 79.1025
+      },
+      {
+        "name": "Vallam Educational Hub",
+        "lat": 10.7185,
+        "lon": 79.0585
+      },
+      {
+        "name": "Pillaiyarpatti Thanjavur",
+        "lat": 10.7385,
+        "lon": 79.0885
+      },
+      {
+        "name": "Mariammankoil (Punnainallur)",
+        "lat": 10.7725,
+        "lon": 79.1855
+      },
+      {
+        "name": "Thiruvaiyaru Tyagaraja Aradhana",
+        "lat": 10.8805,
+        "lon": 79.1025
+      },
+      {
+        "name": "Kandiyur",
+        "lat": 10.8585,
+        "lon": 79.1125
+      },
+      {
+        "name": "Melattur Bhagavata Mela",
+        "lat": 10.8425,
+        "lon": 79.2455
+      },
+      {
+        "name": "Papanasam 108 Shivalayam",
+        "lat": 10.9235,
+        "lon": 79.2775
+      },
+      {
+        "name": "Ayyampettai",
+        "lat": 10.8985,
+        "lon": 79.1955
+      },
+      {
+        "name": "Kumbakonam Mahamaham Tank",
+        "lat": 10.9605,
+        "lon": 79.3845
+      },
+      {
+        "name": "Swamimalai Murugan Temple",
+        "lat": 10.9555,
+        "lon": 79.3255
+      },
+      {
+        "name": "Dharasuram Airavatesvara",
+        "lat": 10.9485,
+        "lon": 79.3555
+      },
+      {
+        "name": "Thirunageswaram Rahu Temple",
+        "lat": 10.9655,
+        "lon": 79.4325
+      },
+      {
+        "name": "Nachiyarkoil Brass Hub",
+        "lat": 10.9125,
+        "lon": 79.4455
+      },
+      {
+        "name": "Thiruvidaimarudur",
+        "lat": 10.9985,
+        "lon": 79.4625
+      },
+      {
+        "name": "Aduthurai TNAU Research Station",
+        "lat": 11.0125,
+        "lon": 79.4885
+      },
+      {
+        "name": "Pattukkottai",
+        "lat": 10.4285,
+        "lon": 79.3195
+      },
+      {
+        "name": "Madukkur",
+        "lat": 10.4855,
+        "lon": 79.4055
+      },
+      {
+        "name": "Peravurani",
+        "lat": 10.3015,
+        "lon": 79.1735
+      },
+      {
+        "name": "Sethubhavachatram Coast",
+        "lat": 10.2455,
+        "lon": 79.2655
+      },
+      {
+        "name": "Orathanadu Agricultural Hub",
+        "lat": 10.6255,
+        "lon": 79.2555
+      },
+      {
+        "name": "Budalur",
+        "lat": 10.8255,
+        "lon": 78.9855
+      },
+      {
+        "name": "Sengipatti",
+        "lat": 10.7485,
+        "lon": 78.9455
+      }
+    ]
+  },
+  "Theni": {
+    "headquarters": "Theni",
+    "region_type": "High Mountain Valley / Western Ghats Cardamom Belt",
+    "localities": [
+      {
+        "name": "Theni Allinagaram",
+        "lat": 10.01,
+        "lon": 77.476
+      },
+      {
+        "name": "Veerapandi Gowmariamman",
+        "lat": 9.965,
+        "lon": 77.452
+      },
+      {
+        "name": "Andipatti",
+        "lat": 9.998,
+        "lon": 77.618
+      },
+      {
+        "name": "Vaigai Dam Hydro Base",
+        "lat": 10.055,
+        "lon": 77.585
+      },
+      {
+        "name": "Kadamalaikundu",
+        "lat": 9.825,
+        "lon": 77.525
+      },
+      {
+        "name": "Periyakulam",
+        "lat": 10.117,
+        "lon": 77.545
+      },
+      {
+        "name": "Vadugapatti Garlic Market",
+        "lat": 10.105,
+        "lon": 77.568
+      },
+      {
+        "name": "Devadanapatti",
+        "lat": 10.138,
+        "lon": 77.625
+      },
+      {
+        "name": "Kumbakarai Falls",
+        "lat": 10.178,
+        "lon": 77.532
+      },
+      {
+        "name": "Bodinayakanur (Cardamom City)",
+        "lat": 10.01,
+        "lon": 77.35
+      },
+      {
+        "name": "Silamarathupatti",
+        "lat": 9.952,
+        "lon": 77.345
+      },
+      {
+        "name": "Bodi Mettu Ghats Pass",
+        "lat": 10.025,
+        "lon": 77.248
+      },
+      {
+        "name": "Chinnamanur Sivakami Amman",
+        "lat": 9.842,
+        "lon": 77.385
+      },
+      {
+        "name": "Markayankottai",
+        "lat": 9.878,
+        "lon": 77.362
+      },
+      {
+        "name": "Uthamapalayam",
+        "lat": 9.805,
+        "lon": 77.329
+      },
+      {
+        "name": "Kombai Dog Breed Native Hub",
+        "lat": 9.842,
+        "lon": 77.315
+      },
+      {
+        "name": "Cumbum Green Valley",
+        "lat": 9.734,
+        "lon": 77.283
+      },
+      {
+        "name": "Surulipatti Grape Orchards",
+        "lat": 9.685,
+        "lon": 77.285
+      },
+      {
+        "name": "Gudalur Cumbum Valley",
+        "lat": 9.682,
+        "lon": 77.245
+      },
+      {
+        "name": "Suruli Falls",
+        "lat": 9.665,
+        "lon": 77.262
+      },
+      {
+        "name": "Megamalai Cloud Mountain",
+        "lat": 9.697,
+        "lon": 77.411
+      },
+      {
+        "name": "Highwavys Estate",
+        "lat": 9.682,
+        "lon": 77.425
+      }
+    ]
+  },
+  "Thoothukudi": {
+    "headquarters": "Thoothukudi",
+    "region_type": "Deep South Commercial Coast / Pearl & Salt City",
+    "localities": [
+      {
+        "name": "Thoothukudi Major Port",
+        "lat": 8.764,
+        "lon": 78.134
+      },
+      {
+        "name": "Millerpuram",
+        "lat": 8.802,
+        "lon": 78.142
+      },
+      {
+        "name": "Bryant Nagar",
+        "lat": 8.795,
+        "lon": 78.155
+      },
+      {
+        "name": "Spic Nagar Chemical SEZ",
+        "lat": 8.732,
+        "lon": 78.125
+      },
+      {
+        "name": "Muthiapuram",
+        "lat": 8.742,
+        "lon": 78.138
+      },
+      {
+        "name": "SIPCOT Thoothukudi",
+        "lat": 8.845,
+        "lon": 78.105
+      },
+      {
+        "name": "Pudukottai Thoothukudi",
+        "lat": 8.725,
+        "lon": 78.045
+      },
+      {
+        "name": "Vembar Fishing Coast",
+        "lat": 9.072,
+        "lon": 78.365
+      },
+      {
+        "name": "Vilathikulam Chilli Market",
+        "lat": 9.128,
+        "lon": 78.168
+      },
+      {
+        "name": "Pudur Vilathikulam",
+        "lat": 9.278,
+        "lon": 78.135
+      },
+      {
+        "name": "Ottapidaram (V.O. Chidambaram)",
+        "lat": 8.905,
+        "lon": 78.012
+      },
+      {
+        "name": "Panchalankurichi Veerapandiya Kattabomman",
+        "lat": 8.922,
+        "lon": 78.048
+      },
+      {
+        "name": "Eppodum Vendran Dam",
+        "lat": 8.985,
+        "lon": 78.085
+      },
+      {
+        "name": "Kovilpatti Match & Kadalai Mittai",
+        "lat": 9.173,
+        "lon": 77.868
+      },
+      {
+        "name": "Inam Maniyachi",
+        "lat": 9.162,
+        "lon": 77.852
+      },
+      {
+        "name": "Kayathar Windmills",
+        "lat": 8.955,
+        "lon": 77.775
+      },
+      {
+        "name": "Kadambur Railway Hub",
+        "lat": 8.982,
+        "lon": 77.872
+      },
+      {
+        "name": "Kalugumalai Jain Beds & Vettuvankoil",
+        "lat": 9.145,
+        "lon": 77.708
+      },
+      {
+        "name": "Ettayapuram (Mahakavi Bharati)",
+        "lat": 9.15,
+        "lon": 77.994
+      },
+      {
+        "name": "Srivaikuntam Dam",
+        "lat": 8.625,
+        "lon": 77.909
+      },
+      {
+        "name": "Alwarthirunagari Nava Tirupathi",
+        "lat": 8.608,
+        "lon": 77.945
+      },
+      {
+        "name": "Eral Banana Market",
+        "lat": 8.628,
+        "lon": 78.015
+      },
+      {
+        "name": "Authoor Betel Leaf Gardens",
+        "lat": 8.585,
+        "lon": 78.075
+      },
+      {
+        "name": "Tiruchendur Murugan Sea Shore",
+        "lat": 8.497,
+        "lon": 78.125
+      },
+      {
+        "name": "Kayalpattinam Coastal Town",
+        "lat": 8.568,
+        "lon": 78.129
+      },
+      {
+        "name": "Arumuganeri Salt Pans",
+        "lat": 8.572,
+        "lon": 78.105
+      },
+      {
+        "name": "Udangudi Palm Jaggery Hub",
+        "lat": 8.435,
+        "lon": 78.035
+      },
+      {
+        "name": "Kulasekharapatnam Dussehra",
+        "lat": 8.405,
+        "lon": 78.058
+      },
+      {
+        "name": "Sathankulam",
+        "lat": 8.442,
+        "lon": 77.915
+      },
+      {
+        "name": "Meignanapuram Church",
+        "lat": 8.472,
+        "lon": 78.015
+      }
+    ]
+  },
+  "Tiruchirappalli": {
+    "headquarters": "Tiruchirappalli",
+    "region_type": "Geographic Heart of Tamil Nadu / Cauvery Valley",
+    "localities": [
+      {
+        "name": "Rockfort Ucchi Pillayar Temple",
+        "lat": 10.8285,
+        "lon": 78.6975
+      },
+      {
+        "name": "Cantonment Trichy",
+        "lat": 10.8035,
+        "lon": 78.6825
+      },
+      {
+        "name": "Central Bus Stand Trichy",
+        "lat": 10.7985,
+        "lon": 78.6805
+      },
+      {
+        "name": "Tiruchirappalli Junction",
+        "lat": 10.7905,
+        "lon": 78.6855
+      },
+      {
+        "name": "Thillai Nagar Commercial",
+        "lat": 10.8265,
+        "lon": 78.6835
+      },
+      {
+        "name": "Woraiyur (Chola Capital)",
+        "lat": 10.8325,
+        "lon": 78.6715
+      },
+      {
+        "name": "Tennur",
+        "lat": 10.8185,
+        "lon": 78.6855
+      },
+      {
+        "name": "Palakkarai",
+        "lat": 10.8125,
+        "lon": 78.6985
+      },
+      {
+        "name": "Main Guard Gate Teppakulam",
+        "lat": 10.8255,
+        "lon": 78.6945
+      },
+      {
+        "name": "Srirangam Ranganathaswamy Temple",
+        "lat": 10.8625,
+        "lon": 78.6945
+      },
+      {
+        "name": "Thiruvanaikaval Jambukeswarar",
+        "lat": 10.8525,
+        "lon": 78.7055
+      },
+      {
+        "name": "No.1 Tollgate Trichy",
+        "lat": 10.8855,
+        "lon": 78.7255
+      },
+      {
+        "name": "Samayapuram Mariamman Temple",
+        "lat": 10.9285,
+        "lon": 78.7425
+      },
+      {
+        "name": "Manachanallur Rice Mills",
+        "lat": 10.9085,
+        "lon": 78.7025
+      },
+      {
+        "name": "Thuraiyur Foothills",
+        "lat": 11.1445,
+        "lon": 78.5965
+      },
+      {
+        "name": "Uppiliapuram",
+        "lat": 11.2355,
+        "lon": 78.5325
+      },
+      {
+        "name": "Musiri Cauvery North",
+        "lat": 10.9385,
+        "lon": 78.4555
+      },
+      {
+        "name": "Thottiyam",
+        "lat": 11.0025,
+        "lon": 78.3285
+      },
+      {
+        "name": "Kattuputhur Banana Hub",
+        "lat": 11.0525,
+        "lon": 78.2985
+      },
+      {
+        "name": "Lalgudi",
+        "lat": 10.8685,
+        "lon": 78.8155
+      },
+      {
+        "name": "Poovalur",
+        "lat": 10.8855,
+        "lon": 78.8355
+      },
+      {
+        "name": "Pullambadi",
+        "lat": 10.9455,
+        "lon": 78.9155
+      },
+      {
+        "name": "Golden Rock Railway Workshop",
+        "lat": 10.7855,
+        "lon": 78.7215
+      },
+      {
+        "name": "Ponmalaipatti",
+        "lat": 10.7725,
+        "lon": 78.7325
+      },
+      {
+        "name": "KK Nagar Trichy",
+        "lat": 10.7785,
+        "lon": 78.6955
+      },
+      {
+        "name": "Trichy International Airport",
+        "lat": 10.7655,
+        "lon": 78.7125
+      },
+      {
+        "name": "Gundur",
+        "lat": 10.7425,
+        "lon": 78.7425
+      },
+      {
+        "name": "Mathur",
+        "lat": 10.7185,
+        "lon": 78.7655
+      },
+      {
+        "name": "Navalpattu IT Park",
+        "lat": 10.7485,
+        "lon": 78.7855
+      },
+      {
+        "name": "Thuvakudi (NIT Trichy)",
+        "lat": 10.7585,
+        "lon": 78.8155
+      },
+      {
+        "name": "Tiruverumbur BHEL",
+        "lat": 10.7785,
+        "lon": 78.7755
+      },
+      {
+        "name": "Kattur Industrial",
+        "lat": 10.7985,
+        "lon": 78.7525
+      },
+      {
+        "name": "Ariyamangalam",
+        "lat": 10.8085,
+        "lon": 78.7285
+      },
+      {
+        "name": "Manapparai Murukku Town",
+        "lat": 10.6075,
+        "lon": 78.4145
+      },
+      {
+        "name": "Marungapuri",
+        "lat": 10.4525,
+        "lon": 78.3685
+      }
+    ]
+  },
+  "Tirunelveli": {
+    "headquarters": "Tirunelveli",
+    "region_type": "Thamirabarani River Valley / Halwa City",
+    "localities": [
+      {
+        "name": "Tirunelveli Junction",
+        "lat": 8.728,
+        "lon": 77.708
+      },
+      {
+        "name": "Tirunelveli Town Nellaiappar",
+        "lat": 8.732,
+        "lon": 77.685
+      },
+      {
+        "name": "Pettai Industrial",
+        "lat": 8.745,
+        "lon": 77.662
+      },
+      {
+        "name": "Vannarpettai",
+        "lat": 8.725,
+        "lon": 77.722
+      },
+      {
+        "name": "Palayamkottai (Oxford of South)",
+        "lat": 8.718,
+        "lon": 77.742
+      },
+      {
+        "name": "High Ground Palayamkottai",
+        "lat": 8.708,
+        "lon": 77.765
+      },
+      {
+        "name": "Samathanapuram",
+        "lat": 8.712,
+        "lon": 77.735
+      },
+      {
+        "name": "NGO Colony",
+        "lat": 8.698,
+        "lon": 77.755
+      },
+      {
+        "name": "Melapalayam",
+        "lat": 8.705,
+        "lon": 77.734
+      },
+      {
+        "name": "Thachanallur Sugar Mill",
+        "lat": 8.752,
+        "lon": 77.718
+      },
+      {
+        "name": "Gangaikondan SIPCOT",
+        "lat": 8.855,
+        "lon": 77.785
+      },
+      {
+        "name": "Manur",
+        "lat": 8.842,
+        "lon": 77.682
+      },
+      {
+        "name": "Sankar Nagar (India Cements)",
+        "lat": 8.785,
+        "lon": 77.725
+      },
+      {
+        "name": "Suthamalli",
+        "lat": 8.712,
+        "lon": 77.645
+      },
+      {
+        "name": "Cheranmahadevi",
+        "lat": 8.682,
+        "lon": 77.564
+      },
+      {
+        "name": "Pathamadai Silk Mat Weaving",
+        "lat": 8.675,
+        "lon": 77.585
+      },
+      {
+        "name": "Veeravanallur",
+        "lat": 8.688,
+        "lon": 77.525
+      },
+      {
+        "name": "Ambasamudram Mountain Zone",
+        "lat": 8.706,
+        "lon": 77.458
+      },
+      {
+        "name": "Kallidaikurichi Agasthiyar",
+        "lat": 8.692,
+        "lon": 77.462
+      },
+      {
+        "name": "Manimuthar Dam & Falls",
+        "lat": 8.612,
+        "lon": 77.42
+      },
+      {
+        "name": "Singampatti Zamin",
+        "lat": 8.648,
+        "lon": 77.435
+      },
+      {
+        "name": "Vikramasingapuram",
+        "lat": 8.678,
+        "lon": 77.385
+      },
+      {
+        "name": "Papanasam Dam & Riverbank",
+        "lat": 8.705,
+        "lon": 77.368
+      },
+      {
+        "name": "Alwarkurichi",
+        "lat": 8.782,
+        "lon": 77.412
+      },
+      {
+        "name": "Nanguneri Special Economic Zone",
+        "lat": 8.489,
+        "lon": 77.658
+      },
+      {
+        "name": "Kalakkad Mundanthurai Reserve",
+        "lat": 8.515,
+        "lon": 77.552
+      },
+      {
+        "name": "Valliyur Windmill Gateway",
+        "lat": 8.382,
+        "lon": 77.615
+      },
+      {
+        "name": "Panagudi",
+        "lat": 8.328,
+        "lon": 77.582
+      },
+      {
+        "name": "Radhapuram",
+        "lat": 8.305,
+        "lon": 77.685
+      },
+      {
+        "name": "Kudankulam Nuclear Power Plant",
+        "lat": 8.175,
+        "lon": 77.712
+      }
+    ]
+  },
+  "Tirupathur": {
+    "headquarters": "Tirupathur",
+    "region_type": "Yelagiri Hills & Leather Corridor",
+    "localities": [
+      {
+        "name": "Tirupathur Town",
+        "lat": 12.495,
+        "lon": 78.568
+      },
+      {
+        "name": "Pudupettai",
+        "lat": 12.465,
+        "lon": 78.585
+      },
+      {
+        "name": "Kandili",
+        "lat": 12.435,
+        "lon": 78.512
+      },
+      {
+        "name": "Jolarpet Junction",
+        "lat": 12.569,
+        "lon": 78.579
+      },
+      {
+        "name": "Natrampalli",
+        "lat": 12.585,
+        "lon": 78.524
+      },
+      {
+        "name": "Yelagiri Hills (Athanavur)",
+        "lat": 12.583,
+        "lon": 78.638
+      },
+      {
+        "name": "Mangalam Yelagiri",
+        "lat": 12.602,
+        "lon": 78.652
+      },
+      {
+        "name": "Vaniyambadi Biyabani",
+        "lat": 12.684,
+        "lon": 78.618
+      },
+      {
+        "name": "Valayampet",
+        "lat": 12.705,
+        "lon": 78.635
+      },
+      {
+        "name": "Alangayam",
+        "lat": 12.615,
+        "lon": 78.748
+      },
+      {
+        "name": "Kavalur Vainu Bappu Observatory",
+        "lat": 12.575,
+        "lon": 78.825
+      },
+      {
+        "name": "Ambur Leather Hub",
+        "lat": 12.788,
+        "lon": 78.715
+      },
+      {
+        "name": "Thuthipet Ambur",
+        "lat": 12.805,
+        "lon": 78.735
+      },
+      {
+        "name": "Madhanur Sugar Mills",
+        "lat": 12.855,
+        "lon": 78.795
+      }
+    ]
+  },
+  "Tiruppur": {
+    "headquarters": "Tiruppur",
+    "region_type": "Knitwear Capital / Western Dry Plateau",
+    "localities": [
+      {
+        "name": "Tiruppur Central (Kumaran Rd)",
+        "lat": 11.108,
+        "lon": 77.341
+      },
+      {
+        "name": "Old Bus Stand Tiruppur",
+        "lat": 11.105,
+        "lon": 77.348
+      },
+      {
+        "name": "New Bus Stand Pushpa",
+        "lat": 11.115,
+        "lon": 77.355
+      },
+      {
+        "name": "Avinashi Road Tiruppur",
+        "lat": 11.122,
+        "lon": 77.338
+      },
+      {
+        "name": "Anupparpalayam Metal Works",
+        "lat": 11.148,
+        "lon": 77.325
+      },
+      {
+        "name": "Velampalayam",
+        "lat": 11.135,
+        "lon": 77.318
+      },
+      {
+        "name": "College Road Tiruppur",
+        "lat": 11.128,
+        "lon": 77.362
+      },
+      {
+        "name": "Angeripalayam",
+        "lat": 11.155,
+        "lon": 77.342
+      },
+      {
+        "name": "Nallur Handloom Hub",
+        "lat": 11.082,
+        "lon": 77.375
+      },
+      {
+        "name": "Veerapandi",
+        "lat": 11.072,
+        "lon": 77.348
+      },
+      {
+        "name": "Palladam Hi-Tech Weaving",
+        "lat": 11.004,
+        "lon": 77.291
+      },
+      {
+        "name": "Samalapuram Lake",
+        "lat": 11.052,
+        "lon": 77.245
+      },
+      {
+        "name": "Avinashi Lingeswarar Temple",
+        "lat": 11.194,
+        "lon": 77.269
+      },
+      {
+        "name": "Thekkalur",
+        "lat": 11.158,
+        "lon": 77.215
+      },
+      {
+        "name": "Uthukuli Butter Town",
+        "lat": 11.162,
+        "lon": 77.445
+      },
+      {
+        "name": "Kunnathur",
+        "lat": 11.235,
+        "lon": 77.428
+      },
+      {
+        "name": "Kangeyam Bull Country",
+        "lat": 11.006,
+        "lon": 77.563
+      },
+      {
+        "name": "Sivanmalai Murugan Temple",
+        "lat": 11.025,
+        "lon": 77.512
+      },
+      {
+        "name": "Kundadam",
+        "lat": 10.875,
+        "lon": 77.525
+      },
+      {
+        "name": "Dharapuram Amaravathi River",
+        "lat": 10.728,
+        "lon": 77.525
+      },
+      {
+        "name": "Mulanur",
+        "lat": 10.785,
+        "lon": 77.725
+      },
+      {
+        "name": "Udumalaipettai Windmills",
+        "lat": 10.584,
+        "lon": 77.247
+      },
+      {
+        "name": "Madathukulam",
+        "lat": 10.548,
+        "lon": 77.372
+      },
+      {
+        "name": "Kaniyur",
+        "lat": 10.525,
+        "lon": 77.415
+      },
+      {
+        "name": "Thirumoorthy Hills & Dam",
+        "lat": 10.485,
+        "lon": 77.168
+      },
+      {
+        "name": "Amaravathi Dam Reservoir",
+        "lat": 10.422,
+        "lon": 77.272
+      }
+    ]
+  },
+  "Tiruvallur": {
+    "headquarters": "Tiruvallur",
+    "region_type": "Northern Coastal & Industrial Corridor",
+    "localities": [
+      {
+        "name": "Tiruvallur Veeraraghava Temple",
+        "lat": 13.143,
+        "lon": 79.908
+      },
+      {
+        "name": "Manavala Nagar",
+        "lat": 13.125,
+        "lon": 79.915
+      },
+      {
+        "name": "Sevvapet Road",
+        "lat": 13.132,
+        "lon": 79.975
+      },
+      {
+        "name": "Veppampattu",
+        "lat": 13.128,
+        "lon": 80.005
+      },
+      {
+        "name": "Tiruninravur Bakthavatsala",
+        "lat": 13.118,
+        "lon": 80.035
+      },
+      {
+        "name": "Pattabiram TIDEL Park",
+        "lat": 13.122,
+        "lon": 80.062
+      },
+      {
+        "name": "Avadi Tank Factory",
+        "lat": 13.114,
+        "lon": 80.098
+      },
+      {
+        "name": "Thirumullaivoyal",
+        "lat": 13.128,
+        "lon": 80.135
+      },
+      {
+        "name": "Poonamallee Historic Hub",
+        "lat": 13.048,
+        "lon": 80.111
+      },
+      {
+        "name": "Kumananchavadi",
+        "lat": 13.042,
+        "lon": 80.125
+      },
+      {
+        "name": "Iyyappanthangal",
+        "lat": 13.038,
+        "lon": 80.142
+      },
+      {
+        "name": "Porur Roundtana / Lake",
+        "lat": 13.035,
+        "lon": 80.158
+      },
+      {
+        "name": "Mangadu Kamakshi Amman",
+        "lat": 13.045,
+        "lon": 80.118
+      },
+      {
+        "name": "Thiruverkadu Karumariamman",
+        "lat": 13.072,
+        "lon": 80.125
+      },
+      {
+        "name": "Thirumazhisai Satellite City",
+        "lat": 13.055,
+        "lon": 80.065
+      },
+      {
+        "name": "Poondi Reservoir Dam",
+        "lat": 13.185,
+        "lon": 79.865
+      },
+      {
+        "name": "Thiruvalangadu Temple",
+        "lat": 13.135,
+        "lon": 79.775
+      },
+      {
+        "name": "Kadambathur",
+        "lat": 13.098,
+        "lon": 79.845
+      },
+      {
+        "name": "Periyapalayam Bhavani Amman",
+        "lat": 13.312,
+        "lon": 80.045
+      },
+      {
+        "name": "Uthukottai Arani River",
+        "lat": 13.335,
+        "lon": 79.905
+      },
+      {
+        "name": "Gummidipoondi SIPCOT",
+        "lat": 13.407,
+        "lon": 80.129
+      },
+      {
+        "name": "Elavur Checkpost",
+        "lat": 13.452,
+        "lon": 80.142
+      },
+      {
+        "name": "Arambakkam",
+        "lat": 13.488,
+        "lon": 80.165
+      },
+      {
+        "name": "Ponneri Smart City Node",
+        "lat": 13.324,
+        "lon": 80.198
+      },
+      {
+        "name": "Minjur Desalination Base",
+        "lat": 13.275,
+        "lon": 80.258
+      },
+      {
+        "name": "Ennore Thermal & Port",
+        "lat": 13.218,
+        "lon": 80.325
+      },
+      {
+        "name": "Pulicat Lagoon (Pazhaverkadu)",
+        "lat": 13.425,
+        "lon": 80.32
+      },
+      {
+        "name": "Tiruttani Murugan Hill",
+        "lat": 13.178,
+        "lon": 79.633
+      },
+      {
+        "name": "R.K. Pet",
+        "lat": 13.215,
+        "lon": 79.485
+      },
+      {
+        "name": "Pallipattu",
+        "lat": 13.332,
+        "lon": 79.442
+      }
+    ]
+  },
+  "Tiruvannamalai": {
+    "headquarters": "Tiruvannamalai",
+    "region_type": "Sacred Hill Plateau & Jawadhu Forest",
+    "localities": [
+      {
+        "name": "Annamalaiyar Temple Core",
+        "lat": 12.225,
+        "lon": 79.074
+      },
+      {
+        "name": "Girivalam Path (14 km)",
+        "lat": 12.238,
+        "lon": 79.055
+      },
+      {
+        "name": "Vengikkal Collectorate",
+        "lat": 12.258,
+        "lon": 79.082
+      },
+      {
+        "name": "Kilpennathur",
+        "lat": 12.245,
+        "lon": 79.225
+      },
+      {
+        "name": "Vettavalam",
+        "lat": 12.112,
+        "lon": 79.248
+      },
+      {
+        "name": "Chengam",
+        "lat": 12.308,
+        "lon": 78.799
+      },
+      {
+        "name": "Pudupalayam",
+        "lat": 12.298,
+        "lon": 78.915
+      },
+      {
+        "name": "Sathanur Dam Park",
+        "lat": 12.185,
+        "lon": 78.845
+      },
+      {
+        "name": "Thandarampattu",
+        "lat": 12.152,
+        "lon": 78.945
+      },
+      {
+        "name": "Polur",
+        "lat": 12.507,
+        "lon": 79.127
+      },
+      {
+        "name": "Kalambur",
+        "lat": 12.565,
+        "lon": 79.185
+      },
+      {
+        "name": "Kannamangalam",
+        "lat": 12.748,
+        "lon": 79.165
+      },
+      {
+        "name": "Jamunamarathur (Jawadhu Hills)",
+        "lat": 12.636,
+        "lon": 78.896
+      },
+      {
+        "name": "Arani Silk City",
+        "lat": 12.668,
+        "lon": 79.284
+      },
+      {
+        "name": "Cheyyar SIPCOT",
+        "lat": 12.659,
+        "lon": 79.542
+      },
+      {
+        "name": "Dusi Lake",
+        "lat": 12.775,
+        "lon": 79.675
+      },
+      {
+        "name": "Vandavasi Historic Fort",
+        "lat": 12.502,
+        "lon": 79.608
+      },
+      {
+        "name": "Thellar",
+        "lat": 12.435,
+        "lon": 79.545
+      },
+      {
+        "name": "Desur",
+        "lat": 12.428,
+        "lon": 79.462
+      }
+    ]
+  },
+  "Tiruvarur": {
+    "headquarters": "Tiruvarur",
+    "region_type": "Cauvery Delta Heart / Chariot City & Wetlands",
+    "localities": [
+      {
+        "name": "Tiruvarur Thyagaraja Temple",
+        "lat": 10.772,
+        "lon": 79.636
+      },
+      {
+        "name": "Kamalalayam Tank",
+        "lat": 10.778,
+        "lon": 79.628
+      },
+      {
+        "name": "Koradacheri",
+        "lat": 10.785,
+        "lon": 79.512
+      },
+      {
+        "name": "Kulikarai",
+        "lat": 10.765,
+        "lon": 79.575
+      },
+      {
+        "name": "Kudavasal",
+        "lat": 10.875,
+        "lon": 79.489
+      },
+      {
+        "name": "Enkan Murugan",
+        "lat": 10.812,
+        "lon": 79.585
+      },
+      {
+        "name": "Nannilam",
+        "lat": 10.983,
+        "lon": 79.617
+      },
+      {
+        "name": "Srivanjiyam",
+        "lat": 10.952,
+        "lon": 79.562
+      },
+      {
+        "name": "Peralam",
+        "lat": 10.985,
+        "lon": 79.672
+      },
+      {
+        "name": "Poonthottam",
+        "lat": 10.942,
+        "lon": 79.665
+      },
+      {
+        "name": "Mannargudi Rajagopalaswamy",
+        "lat": 10.663,
+        "lon": 79.444
+      },
+      {
+        "name": "Pamani",
+        "lat": 10.685,
+        "lon": 79.425
+      },
+      {
+        "name": "Needamangalam Junction",
+        "lat": 10.768,
+        "lon": 79.418
+      },
+      {
+        "name": "Thirumakkottai",
+        "lat": 10.535,
+        "lon": 79.412
+      },
+      {
+        "name": "Vaduvur Bird Sanctuary",
+        "lat": 10.702,
+        "lon": 79.318
+      },
+      {
+        "name": "Thiruthuraipoondi",
+        "lat": 10.536,
+        "lon": 79.646
+      },
+      {
+        "name": "Muthupet Mangrove Lagoon",
+        "lat": 10.4,
+        "lon": 79.51
+      },
+      {
+        "name": "Idumbavanam",
+        "lat": 10.455,
+        "lon": 79.658
+      },
+      {
+        "name": "Kottur Delta",
+        "lat": 10.598,
+        "lon": 79.525
+      }
+    ]
+  },
+  "Vellore": {
+    "headquarters": "Vellore",
+    "region_type": "Historic Fort City & Palar River Valley",
+    "localities": [
+      {
+        "name": "Vellore Fort & Jalakanteswarar",
+        "lat": 12.916,
+        "lon": 79.132
+      },
+      {
+        "name": "Katpadi Railway Junction",
+        "lat": 12.981,
+        "lon": 79.138
+      },
+      {
+        "name": "VIT University Campus",
+        "lat": 12.969,
+        "lon": 79.155
+      },
+      {
+        "name": "Gandhi Nagar Katpadi",
+        "lat": 12.972,
+        "lon": 79.141
+      },
+      {
+        "name": "Sathuvachari Expressway",
+        "lat": 12.936,
+        "lon": 79.167
+      },
+      {
+        "name": "Bagayam CMC Campus",
+        "lat": 12.871,
+        "lon": 79.137
+      },
+      {
+        "name": "Thorapadi Central Prison",
+        "lat": 12.895,
+        "lon": 79.108
+      },
+      {
+        "name": "Otteri Lake",
+        "lat": 12.882,
+        "lon": 79.152
+      },
+      {
+        "name": "Shenbakkam",
+        "lat": 12.932,
+        "lon": 79.115
+      },
+      {
+        "name": "Konavattom",
+        "lat": 12.925,
+        "lon": 79.102
+      },
+      {
+        "name": "Viruthampet",
+        "lat": 12.955,
+        "lon": 79.128
+      },
+      {
+        "name": "Thiruvalam",
+        "lat": 12.988,
+        "lon": 79.245
+      },
+      {
+        "name": "Gudiyattam Weaving Hub",
+        "lat": 12.946,
+        "lon": 78.871
+      },
+      {
+        "name": "Pernambut Leather Town",
+        "lat": 12.935,
+        "lon": 78.715
+      },
+      {
+        "name": "K.V. Kuppam",
+        "lat": 12.982,
+        "lon": 78.985
+      },
+      {
+        "name": "Anaicut",
+        "lat": 12.874,
+        "lon": 78.995
+      },
+      {
+        "name": "Pallikonda Toll",
+        "lat": 12.915,
+        "lon": 78.962
+      },
+      {
+        "name": "Odugathur Foothills",
+        "lat": 12.785,
+        "lon": 78.865
+      }
+    ]
+  },
+  "Viluppuram": {
+    "headquarters": "Viluppuram",
+    "region_type": "Central Coastal & Plains Gateway",
+    "localities": [
+      {
+        "name": "Viluppuram Junction",
+        "lat": 11.94,
+        "lon": 79.497
+      },
+      {
+        "name": "Valavanur",
+        "lat": 11.918,
+        "lon": 79.585
+      },
+      {
+        "name": "Koliyanur",
+        "lat": 11.928,
+        "lon": 79.525
+      },
+      {
+        "name": "Vikravandi Toll Plaza",
+        "lat": 12.035,
+        "lon": 79.552
+      },
+      {
+        "name": "Radhapuram",
+        "lat": 11.985,
+        "lon": 79.625
+      },
+      {
+        "name": "Gingee Rajagiri Fort",
+        "lat": 12.253,
+        "lon": 79.418
+      },
+      {
+        "name": "Melmalayanur Angalamman",
+        "lat": 12.378,
+        "lon": 79.375
+      },
+      {
+        "name": "Ananthapuram",
+        "lat": 12.185,
+        "lon": 79.362
+      },
+      {
+        "name": "Avalurpet",
+        "lat": 12.312,
+        "lon": 79.285
+      },
+      {
+        "name": "Tindivanam Junction",
+        "lat": 12.234,
+        "lon": 79.651
+      },
+      {
+        "name": "Mailam Murugan Temple",
+        "lat": 12.132,
+        "lon": 79.618
+      },
+      {
+        "name": "Olakkur",
+        "lat": 12.298,
+        "lon": 79.742
+      },
+      {
+        "name": "Marakkanam Salt Pans",
+        "lat": 12.196,
+        "lon": 79.953
+      },
+      {
+        "name": "Koonimedu Beach",
+        "lat": 12.135,
+        "lon": 79.925
+      },
+      {
+        "name": "Vanur",
+        "lat": 12.012,
+        "lon": 79.728
+      },
+      {
+        "name": "Kiliyanur",
+        "lat": 12.082,
+        "lon": 79.785
+      },
+      {
+        "name": "Auroville Outskirts",
+        "lat": 12.008,
+        "lon": 79.805
+      },
+      {
+        "name": "Kandamangalam",
+        "lat": 11.912,
+        "lon": 79.665
+      }
+    ]
+  },
+  "Virudhunagar": {
+    "headquarters": "Virudhunagar",
+    "region_type": "Southern Semi-Arid Industrial & Spice Market",
+    "localities": [
+      {
+        "name": "Virudhunagar Oil Mandi",
+        "lat": 9.587,
+        "lon": 77.957
+      },
+      {
+        "name": "Rosalpatti",
+        "lat": 9.572,
+        "lon": 77.968
+      },
+      {
+        "name": "Kooraikundu",
+        "lat": 9.605,
+        "lon": 77.945
+      },
+      {
+        "name": "Sivakasi Printing & Fireworks Hub",
+        "lat": 9.453,
+        "lon": 77.797
+      },
+      {
+        "name": "Thiruthangal Nindra Narayana",
+        "lat": 9.482,
+        "lon": 77.812
+      },
+      {
+        "name": "Vembakottai Excavation Base",
+        "lat": 9.338,
+        "lon": 77.775
+      },
+      {
+        "name": "Thayilpatti",
+        "lat": 9.385,
+        "lon": 77.742
+      },
+      {
+        "name": "Elayirampannai",
+        "lat": 9.285,
+        "lon": 77.842
+      },
+      {
+        "name": "Sattur Chilly Market",
+        "lat": 9.362,
+        "lon": 77.925
+      },
+      {
+        "name": "Padanthal",
+        "lat": 9.378,
+        "lon": 77.912
+      },
+      {
+        "name": "Rajapalayam Textile Town",
+        "lat": 9.453,
+        "lon": 77.553
+      },
+      {
+        "name": "Dhalavaipuram",
+        "lat": 9.375,
+        "lon": 77.525
+      },
+      {
+        "name": "Chettiarpatti",
+        "lat": 9.412,
+        "lon": 77.538
+      },
+      {
+        "name": "Seithur",
+        "lat": 9.395,
+        "lon": 77.512
+      },
+      {
+        "name": "Srivilliputhur Andal Tower",
+        "lat": 9.513,
+        "lon": 77.633
+      },
+      {
+        "name": "Mamsapuram",
+        "lat": 9.498,
+        "lon": 77.605
+      },
+      {
+        "name": "Watrap",
+        "lat": 9.625,
+        "lon": 77.645
+      },
+      {
+        "name": "Maharajapuram",
+        "lat": 9.648,
+        "lon": 77.678
+      },
+      {
+        "name": "Pilavakkal Dam",
+        "lat": 9.662,
+        "lon": 77.585
+      },
+      {
+        "name": "Aruppukkottai Weaving Town",
+        "lat": 9.512,
+        "lon": 78.098
+      },
+      {
+        "name": "Palayampatti",
+        "lat": 9.528,
+        "lon": 78.115
+      },
+      {
+        "name": "Pandalgudi",
+        "lat": 9.405,
+        "lon": 78.145
+      },
+      {
+        "name": "Kariapatti",
+        "lat": 9.668,
+        "lon": 78.102
+      },
+      {
+        "name": "Mallankinaru",
+        "lat": 9.638,
+        "lon": 78.025
+      },
+      {
+        "name": "Tiruchuli (Ramana Maharshi Birthplace)",
+        "lat": 9.528,
+        "lon": 78.205
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "accuracy": 0.9104477611940298,
+    "precision": 0.9867924528301887,
+    "recall": 0.9079861111111112,
+    "f1_score": 0.945750452079566,
+    "brier_score": 0.06998569127895049,
+    "tolerance_mm": 2.5,
+    "training_records": 2670,
+    "testing_records": 670,
+    "total_records": 3340,
+    "forecast_initializations": 1,
+    "validation_status": "Preliminary prototype; not temporally validated"
+}

@@ -1,0 +1,17 @@
+{
+    "project": "MonsoonTrust",
+    "title": "An AI-Based Approach for Predicting the Reliability of Medium-Range Weather Forecasts",
+    "forecast_initializations": 5,
+    "total_matched_records": 16700,
+    "training_records": 11690,
+    "testing_records": 5010,
+    "reliability_tolerance_mm": 2.5,
+    "temporal_accuracy": 0.7868,
+    "brier_score": 0.1506,
+    "outside_tolerance_f1": 0.69,
+    "within_tolerance_f1": 0.84,
+    "calibration_status": "Imperfect; further calibration required",
+    "observation_window_limitation": "NOAA forecast daily accumulation and IMD observation daily accumulation have a three-hour window mismatch",
+    "validation_status": "Preliminary; only five forecast initializations",
+    "conclusion": "The preliminary results demonstrate the feasibility of estimating rainfall forecast reliability using machine learning, but broader temporal validation and matched accumulation windows are required."
+}

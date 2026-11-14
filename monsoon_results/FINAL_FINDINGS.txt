@@ -1,0 +1,26 @@
+MONSOONTRUST - FINAL PRELIMINARY FINDINGS
+==================================================
+
+Project: MonsoonTrust
+Title: An AI-Based Approach for Predicting the Reliability of Medium-Range Weather Forecasts
+Forecast Initializations: 5
+Total Matched Records: 16700
+Training Records: 11690
+Testing Records: 5010
+Reliability Tolerance Mm: 2.5
+Temporal Accuracy: 0.7868
+Brier Score: 0.1506
+Outside Tolerance F1: 0.69
+Within Tolerance F1: 0.84
+Calibration Status: Imperfect; further calibration required
+Observation Window Limitation: NOAA forecast daily accumulation and IMD observation daily accumulation have a three-hour window mismatch
+Validation Status: Preliminary; only five forecast initializations
+Conclusion: The preliminary results demonstrate the feasibility of estimating rainfall forecast reliability using machine learning, but broader temporal validation and matched accumulation windows are required.
+
+LEAD-DAY RESULTS
+ forecast_day  actual_reliability  average_predicted_reliability  records  mean_absolute_error
+            6            0.670659                       0.708165      334             3.705385
+            7            0.556886                       0.657499      668             6.671474
+            8            0.499002                       0.603815     1002             8.076863
+            9            0.645210                       0.643189     1336             4.032166
+           10            0.779641                       0.675198     1670             2.220092
