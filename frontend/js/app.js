@@ -392,39 +392,67 @@ async function loadDistricts() {
 }
 
 // Location Management & Detection Engine
-async function detectUserLocationInitially() {
+async function detectUserLocationInitially(forceGPS = false) {
   const badge = document.getElementById("live-detected-badge");
   const gpsLabel = document.getElementById("detect-gps-label");
   if (gpsLabel) gpsLabel.textContent = "Locating...";
+
+  // 0. If user previously chose/saved a location and not forcing GPS, load it immediately!
+  const savedDist = localStorage.getItem("user_selected_district");
+  const savedLoc = localStorage.getItem("user_selected_locality");
+  const savedLat = localStorage.getItem("user_selected_lat");
+  const savedLon = localStorage.getItem("user_selected_lon");
+
+  if (!forceGPS && savedDist && state.districtsData && state.districtsData[savedDist]) {
+    applyLocation(savedDist, savedLoc, "Saved Choice", null, savedLat ? parseFloat(savedLat) : null, savedLon ? parseFloat(savedLon) : null);
+    if (gpsLabel) gpsLabel.textContent = "My Location";
+    return;
+  }
 
   // 1. Try High-Precision Browser Geolocation (HTML5 GPS)
   if ("geolocation" in navigator) {
     try {
       if (badge) {
-        badge.innerHTML = `<span>🛰️ Finding your location...</span>`;
+        badge.innerHTML = `<span>🛰️ Requesting device GPS...</span>`;
         badge.style.display = "inline-flex";
       }
 
       const position = await new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject, {
           enableHighAccuracy: true,
-          timeout: 4000,
-          maximumAge: 300000
+          timeout: 10000,
+          maximumAge: 60000
         });
       });
 
       const { latitude, longitude } = position.coords;
+
+      // Reverse geocode locality name
+      let exactLocality = null;
+      try {
+        const geoClientRes = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
+        if (geoClientRes.ok) {
+          const geoData = await geoClientRes.json();
+          exactLocality = geoData.locality || geoData.city || null;
+        }
+      } catch (e) {}
+
       const res = await fetch(`${API_BASE}/api/locate-nearest?lat=${latitude}&lon=${longitude}`);
       if (res.ok) {
         const loc = await res.json();
         if (loc.district) {
           if (gpsLabel) gpsLabel.textContent = "My Location";
-          applyLocation(loc.district, loc.locality, "GPS Detected", loc.distance_km);
+          const finalLocality = exactLocality || loc.locality;
+          applyLocation(loc.district, finalLocality, "GPS Detected", loc.distance_km, latitude, longitude);
           return;
         }
       }
     } catch (geoErr) {
-      console.log("Browser GPS not available or permission denied, trying network detection...", geoErr);
+      console.log("Browser GPS not available or permission denied:", geoErr);
+      const hint = document.getElementById("location-perm-hint");
+      if (hint && geoErr.code === 1) {
+        hint.style.display = "block";
+      }
     }
   }
 
@@ -441,7 +469,7 @@ async function detectUserLocationInitially() {
           const loc = await res.json();
           if (loc.district) {
             if (gpsLabel) gpsLabel.textContent = "My Location";
-            applyLocation(loc.district, loc.locality, "Network Detected", loc.distance_km);
+            applyLocation(loc.district, ip.city || loc.locality, "Network Detected", loc.distance_km, lat, lon);
             return;
           }
         }
@@ -456,8 +484,18 @@ async function detectUserLocationInitially() {
   applyLocation("Chennai", "Chennai Central", "Default");
 }
 
-function applyLocation(district, locality = null, source = "Selected", distanceKm = null) {
+function applyLocation(district, locality = null, source = "Selected", distanceKm = null, customLat = null, customLon = null) {
   state.liveDistrict = district;
+
+  // Save user's preference in localStorage
+  try {
+    localStorage.setItem("user_selected_district", district);
+    if (locality) localStorage.setItem("user_selected_locality", locality);
+    if (customLat && customLon) {
+      localStorage.setItem("user_selected_lat", customLat.toString());
+      localStorage.setItem("user_selected_lon", customLon.toString());
+    }
+  } catch (e) {}
 
   // Sync Live Weather select dropdown
   const liveSelect = document.getElementById("live-district-select");
@@ -475,31 +513,36 @@ function applyLocation(district, locality = null, source = "Selected", distanceK
   // Visual feedback badge
   const badge = document.getElementById("live-detected-badge");
   if (badge) {
+    const locText = locality ? `${locality}, ${district}` : district;
     if (source.includes("GPS")) {
-      badge.innerHTML = `<span>🎯 GPS Located: <strong>${district}</strong></span>`;
+      badge.innerHTML = `<span>🎯 GPS Located: <strong>${locText}</strong></span>`;
+      badge.style.background = "rgba(16, 185, 129, 0.15)";
+      badge.style.color = "#10b981";
+      badge.style.borderColor = "rgba(16, 185, 129, 0.35)";
+      badge.style.display = "inline-flex";
+    } else if (source.includes("Saved")) {
+      badge.innerHTML = `<span>⭐ Saved: <strong>${locText}</strong></span>`;
       badge.style.background = "rgba(16, 185, 129, 0.15)";
       badge.style.color = "#10b981";
       badge.style.borderColor = "rgba(16, 185, 129, 0.35)";
       badge.style.display = "inline-flex";
     } else if (source.includes("Network")) {
-      badge.innerHTML = `<span>🌐 Detected: <strong>${district}</strong></span>`;
+      badge.innerHTML = `<span>🌐 Network: <strong>${locText}</strong></span>`;
       badge.style.background = "rgba(56, 189, 248, 0.15)";
       badge.style.color = "#38bdf8";
       badge.style.borderColor = "rgba(56, 189, 248, 0.35)";
       badge.style.display = "inline-flex";
-    } else if (source.includes("Selected") || source.includes("User")) {
-      badge.innerHTML = `<span>📍 Selected: <strong>${district}</strong></span>`;
+    } else {
+      badge.innerHTML = `<span>📍 Selected: <strong>${locText}</strong></span>`;
       badge.style.background = "rgba(216, 189, 136, 0.15)";
       badge.style.color = "var(--gold-accent)";
       badge.style.borderColor = "rgba(216, 189, 136, 0.35)";
       badge.style.display = "inline-flex";
-    } else {
-      badge.style.display = "none";
     }
   }
 
   // Load the live weather for this location
-  loadLiveWeatherDashboard(district);
+  loadLiveWeatherDashboard(district, false, customLat, customLon, locality);
 }
 
 function updateLocalityDropdown(district, selectedLocality = null) {
@@ -1503,6 +1546,15 @@ function setupLiveWeatherControls() {
     });
   }
 
+  const btnDetect = document.getElementById("btn-detect-my-location");
+  if (btnDetect) {
+    btnDetect.addEventListener("click", async () => {
+      btnDetect.classList.add("spinning");
+      await detectUserLocationInitially(true);
+      setTimeout(() => btnDetect.classList.remove("spinning"), 500);
+    });
+  }
+
   const btnRefresh = document.getElementById("btn-refresh-live-weather");
   if (btnRefresh) {
     btnRefresh.addEventListener("click", async () => {
@@ -1510,7 +1562,16 @@ function setupLiveWeatherControls() {
       btnRefresh.classList.add("spinning");
       const label = document.getElementById("refresh-btn-label");
       if (label) label.textContent = "Updating...";
-      await loadLiveWeatherDashboard(dist, true);
+      const savedLat = localStorage.getItem("user_selected_lat");
+      const savedLon = localStorage.getItem("user_selected_lon");
+      const savedLoc = localStorage.getItem("user_selected_locality");
+      await loadLiveWeatherDashboard(
+        dist,
+        true,
+        savedLat ? parseFloat(savedLat) : null,
+        savedLon ? parseFloat(savedLon) : null,
+        savedLoc
+      );
       setTimeout(() => {
         btnRefresh.classList.remove("spinning");
         if (label) label.textContent = "Refreshed!";
@@ -1543,13 +1604,16 @@ function setupLiveWeatherControls() {
   }, 1000);
 }
 
-async function loadLiveWeatherDashboard(district = "Chennai", forceRefresh = false) {
+async function loadLiveWeatherDashboard(district = "Chennai", forceRefresh = false, customLat = null, customLon = null, customLocality = null) {
   state.liveDistrict = district;
 
   // Resolve district coordinates
   let lat = 13.0827;
   let lon = 80.2707;
-  if (state.districtsData && state.districtsData[district]) {
+  if (customLat && customLon) {
+    lat = customLat;
+    lon = customLon;
+  } else if (state.districtsData && state.districtsData[district]) {
     const locs = state.districtsData[district].localities;
     if (locs && locs.length > 0) {
       lat = locs[0].lat;
@@ -1559,7 +1623,8 @@ async function loadLiveWeatherDashboard(district = "Chennai", forceRefresh = fal
 
   const badgeElem = document.getElementById("live-district-badge");
   const timeElem = document.getElementById("live-weather-timestamp");
-  if (badgeElem) badgeElem.textContent = `${district}, Tamil Nadu`;
+  const displayLocation = customLocality ? `${customLocality}, ${district}, Tamil Nadu` : `${district}, Tamil Nadu`;
+  if (badgeElem) badgeElem.textContent = displayLocation;
   if (timeElem) timeElem.textContent = "Fetching live satellite & forecast model data...";
 
   try {

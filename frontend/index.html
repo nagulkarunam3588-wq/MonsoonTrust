@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   
   <!-- Custom Luxury Stylesheet -->
-  <link rel="stylesheet" href="/static/css/style.css?v=20261115_004">
+  <link rel="stylesheet" href="/static/css/style.css?v=20261115_005">
   
   <!-- Chart.js & Leaflet JS -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -277,6 +277,11 @@
           <span class="pulse-dot"></span>
           <span id="live-weather-timestamp">Live Model Synced</span>
         </div>
+      </div>
+
+      <!-- Permission Hint Banner (Appears only if browser blocked location) -->
+      <div id="location-perm-hint" style="display:none;font-size:12px;color:var(--gold-accent);background:rgba(216,189,136,0.1);padding:8px 14px;border-radius:8px;margin-bottom:18px;border:1px solid rgba(216,189,136,0.25);">
+        📍 <strong>Location access is blocked in your browser:</strong> Click the 🔒 lock icon in your address bar → set <strong>Location</strong> to <em>Allow</em> → then click <strong>"Use My Location"</strong>, or pick your district from the dropdown.
       </div>
 
       <!-- ROW 1: Current Weather (Left) & Tomorrow's Rain Prediction (Right) -->
@@ -1019,6 +1024,6 @@
   </footer>
 
   <!-- Application Controller Script -->
-  <script src="/static/js/app.js?v=20261115_004"></script>
+  <script src="/static/js/app.js?v=20261115_005"></script>
 </body>
 </html>
