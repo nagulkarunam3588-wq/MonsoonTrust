@@ -1541,15 +1541,6 @@ function setupLiveWeatherControls() {
   if (btnDetect) {
     btnDetect.addEventListener("click", async () => {
       btnDetect.classList.add("spinning");
-      await detectUserLocationInitially();
-      setTimeout(() => btnDetect.classList.remove("spinning"), 500);
-    });
-  }
-
-  const btnDetect = document.getElementById("btn-detect-my-location");
-  if (btnDetect) {
-    btnDetect.addEventListener("click", async () => {
-      btnDetect.classList.add("spinning");
       await detectUserLocationInitially(true);
       setTimeout(() => btnDetect.classList.remove("spinning"), 500);
     });
