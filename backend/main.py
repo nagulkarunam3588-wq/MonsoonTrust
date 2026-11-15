@@ -265,6 +265,15 @@ def get_districts():
     return location_service.get_districts_full_payload()
 
 
+@app.get("/api/locate-nearest")
+def locate_nearest_district(
+    lat: float = Query(..., description="User latitude"),
+    lon: float = Query(..., description="User longitude")
+):
+    """Find the closest Tamil Nadu district to coordinates."""
+    return location_service.find_nearest_district(lat=lat, lon=lon)
+
+
 @app.get("/api/localities/{district}")
 def get_localities(district: str):
     """Return localities for a given district."""

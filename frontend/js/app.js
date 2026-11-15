@@ -382,10 +382,124 @@ async function loadDistricts() {
     }
 
     updateLocalityDropdown("Chennai");
-    loadLiveWeatherDashboard("Chennai");
+
+    // Automatically detect user's current location initially!
+    await detectUserLocationInitially();
   } catch (err) {
     console.error("Error loading districts:", err);
+    loadLiveWeatherDashboard("Chennai");
   }
+}
+
+// Location Management & Detection Engine
+async function detectUserLocationInitially() {
+  const badge = document.getElementById("live-detected-badge");
+  const gpsLabel = document.getElementById("detect-gps-label");
+  if (gpsLabel) gpsLabel.textContent = "Locating...";
+
+  // 1. Try High-Precision Browser Geolocation (HTML5 GPS)
+  if ("geolocation" in navigator) {
+    try {
+      if (badge) {
+        badge.innerHTML = `<span>🛰️ Finding your location...</span>`;
+        badge.style.display = "inline-flex";
+      }
+
+      const position = await new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject, {
+          enableHighAccuracy: true,
+          timeout: 4000,
+          maximumAge: 300000
+        });
+      });
+
+      const { latitude, longitude } = position.coords;
+      const res = await fetch(`${API_BASE}/api/locate-nearest?lat=${latitude}&lon=${longitude}`);
+      if (res.ok) {
+        const loc = await res.json();
+        if (loc.district) {
+          if (gpsLabel) gpsLabel.textContent = "My Location";
+          applyLocation(loc.district, loc.locality, "GPS Detected", loc.distance_km);
+          return;
+        }
+      }
+    } catch (geoErr) {
+      console.log("Browser GPS not available or permission denied, trying network detection...", geoErr);
+    }
+  }
+
+  // 2. Fast Network IP Geolocation (Zero permission needed, sub-second)
+  try {
+    const ipRes = await fetch("https://get.geojs.io/v1/ip/geo.json", { cache: "no-store" });
+    if (ipRes.ok) {
+      const ip = await ipRes.json();
+      const lat = parseFloat(ip.latitude);
+      const lon = parseFloat(ip.longitude);
+      if (!isNaN(lat) && !isNaN(lon)) {
+        const res = await fetch(`${API_BASE}/api/locate-nearest?lat=${lat}&lon=${lon}`);
+        if (res.ok) {
+          const loc = await res.json();
+          if (loc.district) {
+            if (gpsLabel) gpsLabel.textContent = "My Location";
+            applyLocation(loc.district, loc.locality, "Network Detected", loc.distance_km);
+            return;
+          }
+        }
+      }
+    }
+  } catch (ipErr) {
+    console.log("IP geolocation unavailable, defaulting to Chennai.", ipErr);
+  }
+
+  // 3. Graceful fallback
+  if (gpsLabel) gpsLabel.textContent = "My Location";
+  applyLocation("Chennai", "Chennai Central", "Default");
+}
+
+function applyLocation(district, locality = null, source = "Selected", distanceKm = null) {
+  state.liveDistrict = district;
+
+  // Sync Live Weather select dropdown
+  const liveSelect = document.getElementById("live-district-select");
+  if (liveSelect && liveSelect.value !== district) {
+    liveSelect.value = district;
+  }
+
+  // Sync Forecast form district & locality select
+  const districtSelect = document.getElementById("district-select");
+  if (districtSelect && districtSelect.value !== district) {
+    districtSelect.value = district;
+    updateLocalityDropdown(district, locality);
+  }
+
+  // Visual feedback badge
+  const badge = document.getElementById("live-detected-badge");
+  if (badge) {
+    if (source.includes("GPS")) {
+      badge.innerHTML = `<span>🎯 GPS Located: <strong>${district}</strong></span>`;
+      badge.style.background = "rgba(16, 185, 129, 0.15)";
+      badge.style.color = "#10b981";
+      badge.style.borderColor = "rgba(16, 185, 129, 0.35)";
+      badge.style.display = "inline-flex";
+    } else if (source.includes("Network")) {
+      badge.innerHTML = `<span>🌐 Detected: <strong>${district}</strong></span>`;
+      badge.style.background = "rgba(56, 189, 248, 0.15)";
+      badge.style.color = "#38bdf8";
+      badge.style.borderColor = "rgba(56, 189, 248, 0.35)";
+      badge.style.display = "inline-flex";
+    } else if (source.includes("Selected") || source.includes("User")) {
+      badge.innerHTML = `<span>📍 Selected: <strong>${district}</strong></span>`;
+      badge.style.background = "rgba(216, 189, 136, 0.15)";
+      badge.style.color = "var(--gold-accent)";
+      badge.style.borderColor = "rgba(216, 189, 136, 0.35)";
+      badge.style.display = "inline-flex";
+    } else {
+      badge.style.display = "none";
+    }
+  }
+
+  // Load the live weather for this location
+  loadLiveWeatherDashboard(district);
 }
 
 function updateLocalityDropdown(district, selectedLocality = null) {
@@ -1376,7 +1490,16 @@ function setupLiveWeatherControls() {
   const liveSelect = document.getElementById("live-district-select");
   if (liveSelect) {
     liveSelect.addEventListener("change", (e) => {
-      loadLiveWeatherDashboard(e.target.value);
+      applyLocation(e.target.value, null, "User Selected");
+    });
+  }
+
+  const btnDetect = document.getElementById("btn-detect-my-location");
+  if (btnDetect) {
+    btnDetect.addEventListener("click", async () => {
+      btnDetect.classList.add("spinning");
+      await detectUserLocationInitially();
+      setTimeout(() => btnDetect.classList.remove("spinning"), 500);
     });
   }
 

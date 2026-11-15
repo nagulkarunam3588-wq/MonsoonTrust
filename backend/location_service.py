@@ -98,6 +98,33 @@ class LocationIntelligence:
     def get_district_details(self, district: str) -> Optional[Dict[str, Any]]:
         return TAMIL_NADU_LOCATIONS.get(district)
 
+    def find_nearest_district(self, lat: float, lon: float) -> Dict[str, Any]:
+        """Find the nearest Tamil Nadu district and locality to any given latitude and longitude."""
+        best_dist = "Chennai"
+        best_locality = "Chennai Central"
+        min_dist_km = float("inf")
+        best_lat = 13.0827
+        best_lon = 80.2707
+
+        for dist_name, dist_info in TAMIL_NADU_LOCATIONS.items():
+            locs = dist_info.get("localities", [])
+            for loc in locs:
+                d = haversine_distance_km(lat, lon, loc["lat"], loc["lon"])
+                if d < min_dist_km:
+                    min_dist_km = d
+                    best_dist = dist_name
+                    best_locality = loc["name"]
+                    best_lat = loc["lat"]
+                    best_lon = loc["lon"]
+
+        return {
+            "district": best_dist,
+            "locality": best_locality,
+            "lat": best_lat,
+            "lon": best_lon,
+            "distance_km": round(min_dist_km, 2)
+        }
+
     def find_nearest_research_grid(self, lat: float, lon: float) -> Dict[str, Any]:
         """Find closest grid point in the research dataset (0.25 deg intervals)."""
         if not self.grid_points:

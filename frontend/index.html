@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   
   <!-- Custom Luxury Stylesheet -->
-  <link rel="stylesheet" href="/static/css/style.css?v=20261115_003">
+  <link rel="stylesheet" href="/static/css/style.css?v=20261115_004">
   
   <!-- Chart.js & Leaflet JS -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -252,9 +252,16 @@
 
       <!-- District Selector & Live Sync Bar -->
       <div class="live-location-bar">
-        <div class="live-district-controls">
-          <label for="live-district-select">📍 Choose Your District:</label>
+        <div class="live-district-controls" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+          <label for="live-district-select">📍 District:</label>
           <select id="live-district-select" class="custom-select"></select>
+          <button id="btn-detect-my-location" class="live-refresh-btn" title="Detect my current location via GPS/Network">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span id="detect-gps-label">Use My Location</span>
+          </button>
           <button id="btn-refresh-live-weather" class="live-refresh-btn" title="Refresh live weather station feed">
             <svg class="refresh-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
@@ -264,6 +271,7 @@
             </svg>
             <span id="refresh-btn-label">Refresh Live Data</span>
           </button>
+          <span id="live-detected-badge" style="display:none;font-size:12px;background:rgba(16,185,129,0.12);color:#10b981;border:1px solid rgba(16,185,129,0.3);padding:4px 10px;border-radius:20px;align-items:center;gap:4px;font-weight:600;"></span>
         </div>
         <div style="font-size:12px;color:var(--ivory-muted);display:flex;align-items:center;gap:8px;">
           <span class="pulse-dot"></span>
@@ -1011,6 +1019,6 @@
   </footer>
 
   <!-- Application Controller Script -->
-  <script src="/static/js/app.js?v=20261115_003"></script>
+  <script src="/static/js/app.js?v=20261115_004"></script>
 </body>
 </html>
